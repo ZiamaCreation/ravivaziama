@@ -67,7 +67,7 @@ PAGES = load("content/pages.json")
 def img(name, alt="", cls="", eager=False):
     name = norm(name)
     src = name if "." in name else f"img/{name}.jpg"
-    return f'<img src="{src}" alt="{E(alt)}"{" class="+chr(34)+cls+chr(34) if cls else ""} loading="{"eager" if eager else "lazy"}" decoding="async">'
+    return f'<img src="{src}" alt="{E(alt)}"{" class="+chr(34)+cls+chr(34) if cls else ""} loading="lazy" decoding="async">'
 
 def ext(text, url):
     return f'<a href="{url}" target="_blank" rel="noopener">{E(text)} <span class="ar">↗</span></a>' if url else E(text)

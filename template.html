@@ -301,6 +301,8 @@ footer .fl{color:var(--ink);letter-spacing:.2em;text-decoration:none}
 @media(min-width:2300px){html{zoom:1.45}}
 </style>
 <script>new MutationObserver(()=>{for(const c of document.querySelectorAll('.stack td:not([data-l])')){let i=0,p=c;while(p=p.previousElementSibling)i+=p.colSpan;c.dataset.l=c.closest('table').rows[0].cells[i]?.textContent||''}}).observe(document,{childList:true,subtree:true})</script>
+<link rel="preload" as="image" href="img/headshot-poster.webp" fetchpriority="high">
+<link rel="preload" as="image" href="img/emboss.webp">
 </head>
 <body>
 <header>
@@ -319,11 +321,11 @@ footer .fl{color:var(--ink);letter-spacing:.2em;text-decoration:none}
 <!-- HOME -->
 <section class="view" id="v-home" data-title="Home">
   <div class="hhero">
-    <h1 class="hmark"><video class="hvid" src="media/headshot.mp4" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video><img class="emboss" src="img/emboss.webp" alt="Raviva Nsiama" width="1800" height="1410"></h1>
+    <h1 class="hmark"><video class="hvid" src="media/headshot.mp4" poster="img/headshot-poster.webp" data-autoplay muted loop playsinline preload="none" aria-hidden="true"></video><img class="emboss" fetchpriority="high" src="img/emboss.webp" alt="Raviva Nsiama" width="1800" height="1410"></h1>
     <p class="hline">Filmmaker and visual artist · Film, photography and visual communication · Berlin</p>
     
   </div>
-  <div class="stillband"><img src="img/home-eyes.jpg" alt="Close-up of eyes with long lashes, sepia toned"></div>
+  <div class="stillband"><img src="img/home-eyes.jpg" loading="lazy" decoding="async" alt="Close-up of eyes with long lashes, sepia toned"></div>
   <div class="band"><div class="wrap intro">
     <h2>{{HOME_HEADING}}</h2>
     <div>
@@ -362,7 +364,7 @@ footer .fl{color:var(--ink);letter-spacing:.2em;text-decoration:none}
 <section class="view" id="v-about" data-title="About">
   <div class="ahead"><img src="img/lum-5.jpg" alt="" style="object-position:50% 40%"><h1>About me</h1></div>
   <div class="band"><div class="wrap about">
-    <div><div class="pwrap"><figure class="portrait tape"><video class="hvid2" src="media/headshot.mp4" autoplay muted loop playsinline preload="auto" aria-label="Photo booth portraits of Raviva Nsiama"></video></figure></div><h2>Raviva Nsiama</h2><p class="meta">Director · Filmmaker · Visual artist · Berlin</p></div>
+    <div><div class="pwrap"><figure class="portrait tape"><video class="hvid2" src="media/headshot.mp4" poster="img/headshot-poster.webp" data-autoplay muted loop playsinline preload="none" aria-label="Photo booth portraits of Raviva Nsiama"></video></figure></div><h2>Raviva Nsiama</h2><p class="meta">Director · Filmmaker · Visual artist · Berlin</p></div>
     <div class="bio">
       {{ABOUT_TEXT}}
       <p class="say">{{ABOUT_NOTE}}</p>
@@ -447,12 +449,13 @@ footer .fl{color:var(--ink);letter-spacing:.2em;text-decoration:none}
     const sec=filmish.includes(h)?'work':(visish.includes(h)?'visual-works':h);
     document.querySelectorAll('[data-nav]').forEach(a=>a.toggleAttribute('aria-current',a.dataset.nav===sec));
     document.title=(h==='home'?'':cur.dataset.title+' – ')+'Raviva Nsiama';
-    document.querySelectorAll('video[autoplay]').forEach(v=>{if(cur.contains(v)){v.muted=true;const p=v.play();if(p)p.catch(()=>{})}else v.pause()});
+    document.querySelectorAll('video[data-autoplay]').forEach(v=>{if(cur.contains(v)){v.muted=true;const p=v.play();if(p)p.catch(()=>{})}else v.pause()});
+    cur.querySelectorAll('img[loading=lazy]').forEach((im,i)=>{if(i<2){im.loading='eager';if(!i)im.fetchPriority='high'}});
     document.body.classList.toggle('onimg',(filmish.includes(h)&&h!=='work'&&h!=='ablaze-in-flames')||h==='about');
     window.scrollTo(0,0);
   };
   window.addEventListener('hashchange',show);show();
-  const kick=()=>document.querySelectorAll('.view.on video[autoplay]').forEach(v=>{v.muted=true;v.play().catch(()=>{})});
+  const kick=()=>document.querySelectorAll('.view.on video[data-autoplay]').forEach(v=>{v.muted=true;v.play().catch(()=>{})});
   ['pointerdown','touchstart','scroll'].forEach(ev=>addEventListener(ev,kick,{once:true,passive:true}));
   /* e-mail assembled in the browser, not in the HTML source (protection against bots) */
   document.querySelectorAll('.em').forEach(a=>{const m=a.dataset.u+String.fromCharCode(64)+a.dataset.d;a.href='mailto:'+m;if(!a.hasAttribute('data-keep'))a.textContent=m});
