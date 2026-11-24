@@ -39,12 +39,13 @@ h4{font:12px/1.4 var(--b);margin:0 0 12px;color:var(--mute);text-transform:upper
 .tape::before{content:"";position:absolute;top:-20px;left:50%;width:min(46%,170px);aspect-ratio:500/140;transform:translateX(-50%) rotate(-3deg);background:url(img/tape.webp) center/100% 100% no-repeat;z-index:3;filter:drop-shadow(0 1px 1px #0002)}
 
 /* header – one nav, blur on hover */
-header{position:fixed;top:0;left:0;right:0;z-index:50;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:16px;padding:18px max(3vw,16px);color:#fff;mix-blend-mode:difference;pointer-events:none}
+header{position:absolute;top:0;left:0;right:0;z-index:50;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:16px;padding:18px max(3vw,16px);color:#fff;mix-blend-mode:difference;pointer-events:none}
 header a{pointer-events:auto}
+body.onimg header{mix-blend-mode:normal;color:#fff;text-shadow:0 1px 10px rgba(0,0,0,.55)}
 .logo{font:13px/1 var(--b);text-decoration:none;text-transform:uppercase;letter-spacing:.2em;justify-self:start}
 nav{display:flex;gap:4px clamp(24px,4.4vw,72px);flex-wrap:wrap;justify-content:center;text-transform:uppercase;font-size:12px;letter-spacing:.12em}
-header a.nl{display:inline-block;text-decoration:none;padding:10px 0;transition:filter .2s ease-in-out,opacity .6s ease;will-change:transform}
-header a.nl:hover{filter:blur(2px)}
+header a.nl{display:inline-block;white-space:nowrap;text-decoration:none;padding:10px 0;transition:filter .2s ease-in-out,opacity .6s ease;will-change:transform}
+@media(hover:hover){header a.nl:hover{filter:blur(2px)}}
 header a.nl[aria-current]{text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:1px}
 header .in{opacity:0;filter:blur(8px)}
 .view>.band:first-child{padding-top:max(120px,9vw)}
@@ -286,7 +287,7 @@ footer .fl{color:var(--ink);letter-spacing:.2em;text-decoration:none}
 
 @media(max-width:900px){.cs-ti,.cs-ti.l,.cs-feed,.voices{grid-template-columns:minmax(0,1fr)}.cs-ti.l .cs-t{order:0}.cs-ports,.cs-quad{grid-template-columns:repeat(2,minmax(0,1fr))}.cs-strip{grid-template-columns:repeat(3,minmax(0,1fr))}.cs-pair figure:nth-child(2){margin-top:0}.intro,.about,.pintro,.forma,.vhero,.mood,.vtexts,.igwrap,.fgrid2{grid-template-columns:minmax(0,1fr)}.vhero{min-height:0}.vh-t{padding-top:40px}.vws{grid-template-columns:repeat(2,minmax(0,1fr))}.awg{grid-template-columns:minmax(0,1fr)}.aw{min-height:0}.igt{position:static}.hphoto{display:none}}
 @media(max-width:640px){
-  header{grid-template-columns:1fr;gap:6px;padding:14px 16px}.logo{justify-self:center}nav{gap:2px 13px;font-size:10.5px;letter-spacing:.07em;flex-wrap:nowrap}header a.nl{padding:6px 0}.view>.band:first-child{padding-top:120px}
+  header{grid-template-columns:1fr;gap:6px;padding:14px 16px}.logo{justify-self:center}nav{gap:2px 11px;font-size:10px;letter-spacing:.05em;flex-wrap:wrap}header a.nl{padding:6px 0}.view>.band:first-child{padding-top:120px}
   .sgrid{--c:3!important;gap:6px}.vws{grid-template-columns:minmax(0,1fr)}
   .irow{grid-template-columns:52px minmax(0,1fr)}.irow i{display:none}
   .next{grid-template-columns:minmax(0,1fr) 90px}.next img{width:90px}
@@ -295,6 +296,7 @@ footer .fl{color:var(--ink);letter-spacing:.2em;text-decoration:none}
   .ahead{height:230px}.ahead h1{padding-top:70px}
   table{font-size:14px}.stack thead{display:none}.stack tr{display:grid;padding-block:10px;border-bottom:1px solid var(--line)}.stack td{display:flow-root;border:0;padding:3px 0;padding-inline-start:7em;text-align:start;width:auto!important}.stack td::before{content:attr(data-l);float:inline-start;width:6.5em;margin-inline-start:-7em;font-size:12px;color:var(--mute)}
 }
+@media(min-width:641px) and (max-width:1060px){header{grid-template-columns:1fr;gap:4px;padding:16px 24px}header .logo{justify-self:center}nav{gap:2px 28px}header a.nl{padding:8px 0}.view>.band:first-child{padding-top:130px}.ahead{height:300px}.ahead h1{padding-top:96px}}
 @media(min-width:1800px){html{zoom:1.2}}
 @media(min-width:2300px){html{zoom:1.45}}
 </style>
@@ -446,6 +448,7 @@ footer .fl{color:var(--ink);letter-spacing:.2em;text-decoration:none}
     document.querySelectorAll('[data-nav]').forEach(a=>a.toggleAttribute('aria-current',a.dataset.nav===sec));
     document.title=(h==='home'?'':cur.dataset.title+' – ')+'Raviva Nsiama';
     document.querySelectorAll('video[autoplay]').forEach(v=>{if(cur.contains(v)){v.muted=true;const p=v.play();if(p)p.catch(()=>{})}else v.pause()});
+    document.body.classList.toggle('onimg',(filmish.includes(h)&&h!=='work'&&h!=='ablaze-in-flames')||h==='about');
     window.scrollTo(0,0);
   };
   window.addEventListener('hashchange',show);show();
