@@ -1,0 +1,119 @@
+{
+  "order": 2,
+  "slug": "glogauair",
+  "title": "GlogauAIR",
+  "year": "2026",
+  "sort_year": "2026",
+  "kind": "Photography · Artist documentation · Social media",
+  "cover": "/img/gl-p1.jpg",
+  "role": "Artist portraits, behind the scenes, showcase documentation, reels",
+  "lead": "Photography and social media content for an international artist residency in Berlin-Kreuzberg.",
+  "blocks": [
+    {
+      "type": "textimg",
+      "image": "/img/glogau-f12.jpg",
+      "title": "Origin",
+      "text": "GlogauAIR is a non-profit art space and international artist-in-residence programme in Berlin-Kreuzberg, founded in 2006 by Chema Alvargonzalez. From April to June 2026, Raviva accompanied the resident artists with her camera and produced visual content for the residency’s digital communication.",
+      "side": "l"
+    },
+    {
+      "type": "portraits",
+      "items": [
+        {
+          "image": "/img/gl-p2.jpg",
+          "name": "Melissa Van Havere",
+          "url": "https://glogauair.net/activity/meet-the-artist-melissa-van-havere/"
+        },
+        {
+          "image": "/img/gl-p3.jpg",
+          "name": "Jupiterfab",
+          "url": "https://glogauair.net/activity/meet-the-artist-jupiterfab/"
+        },
+        {
+          "image": "/img/gl-p4.jpg",
+          "name": "Zoe Ilić",
+          "url": "https://glogauair.net/activity/meet-the-artist-zoe-ilic/"
+        },
+        {
+          "image": "/img/gl-p5.jpg",
+          "name": "Carly Ostler",
+          "url": "https://glogauair.net/activity/meet-the-artist-carly-ostler/"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Meet the Artist",
+      "text": "For the interview series Meet the Artist, Raviva created artist portraits and behind-the-scenes images during the interviews. She documented showcases and the presentation of works on site and prepared selected photo and video material for social media, making the artists, their processes and their work visible."
+    },
+    {
+      "type": "video",
+      "video": "/media/glogau-reel.mp4",
+      "poster": "/img/glogau-1.jpg"
+    },
+    {
+      "type": "feed",
+      "image": "/img/gl-ig1.jpg",
+      "url": "https://www.instagram.com/glogauair/",
+      "handle": "@glogauair"
+    },
+    {
+      "type": "links",
+      "title": "Published with photo credit “Raviva Nsiama”",
+      "items": [
+        {
+          "label": "Meet the Artist // 33",
+          "url": "https://glogauair.net/activity/meet-the-artist-33/"
+        },
+        {
+          "label": "Meet the Artist // Jupiterfab",
+          "url": "https://glogauair.net/activity/meet-the-artist-jupiterfab/"
+        },
+        {
+          "label": "Meet the Artist // Chiu I-Chi",
+          "url": "https://glogauair.net/activity/meet-the-artist-chiu-i-chi/"
+        },
+        {
+          "label": "Meet the Artist // Arnika",
+          "url": "https://glogauair.net/activity/meet-the-artist-arnika/"
+        },
+        {
+          "label": "Meet the Artist // Melissa Van Havere",
+          "url": "https://glogauair.net/activity/meet-the-artist-melissa-van-havere/"
+        },
+        {
+          "label": "Meet the Artist // Carly Ostler",
+          "url": "https://glogauair.net/activity/meet-the-artist-carly-ostler/"
+        },
+        {
+          "label": "Meet the Artist // Panida Te Petchara",
+          "url": "https://glogauair.net/activity/meet-the-artist-panida-te-petchara/"
+        },
+        {
+          "label": "Meet the Artist // Lara Ordoñez",
+          "url": "https://glogauair.net/activity/meet-the-artist-lara-ordonez/"
+        },
+        {
+          "label": "Meet the Artist // Zoe Ilić",
+          "url": "https://glogauair.net/activity/meet-the-artist-zoe-ilic/"
+        },
+        {
+          "label": "Meet the Artist // Czeslawa Wojtkowski",
+          "url": "https://glogauair.net/activity/meet-the-artist-czeslawa-wojtkowski/"
+        },
+        {
+          "label": "Meet the Artist // cheyenne hedrickson",
+          "url": "https://glogauair.net/activity/meet-the-artist-cheynne-hedrickson/"
+        },
+        {
+          "label": "Showcase // Panida Te Petchara",
+          "url": "https://glogauair.net/activity/showcase-panida-te-petchara/"
+        },
+        {
+          "label": "Showcase // 33",
+          "url": "https://glogauair.net/activity/showcase-33/"
+        }
+      ]
+    }
+  ]
+}

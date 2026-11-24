@@ -1,0 +1,78 @@
+{
+  "order": 1,
+  "slug": "king-rose-dance-collective",
+  "title": "King Rose Dance Collective",
+  "year": "2022–2024",
+  "sort_year": "2024",
+  "kind": "Logo · Social media · Merch",
+  "cover": "/img/krd-cover.jpg",
+  "role": "Logo, corporate identity, social media posts, merch, open calls",
+  "lead": "Black joy, elegance and strength. Identity, social media and merch for a Berlin dance collective.",
+  "blocks": [
+    {
+      "type": "textimg",
+      "image": "/img/krd-9.jpg",
+      "title": "Origin",
+      "text": "The King Rose Dance Collective brings dancers together around Black joy, elegance and strength. As the collective grew, it needed an identity that could carry performances, open calls, social media and merch with one voice.",
+      "side": "r"
+    },
+    {
+      "type": "kit",
+      "image": "/img/krd-kit.jpg",
+      "caption": "Brand kit · primary logo, palette, typography and applications"
+    },
+    {
+      "type": "palette",
+      "colors": [
+        {
+          "hex": "#000000",
+          "label": "Black"
+        },
+        {
+          "hex": "#342EF7",
+          "label": "Electric blue"
+        },
+        {
+          "hex": "#FF8410",
+          "label": "Orange"
+        },
+        {
+          "hex": "#FFEDDC",
+          "label": "Cream"
+        }
+      ]
+    },
+    {
+      "type": "images",
+      "layout": "pair",
+      "images": [
+        "/img/krd-5.jpg",
+        "/img/krd-6.jpg"
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Concept & design decisions",
+      "text": "Letters that move like dancing bodies: a fluid, distorted wordmark that bends and stretches but stays legible. Black, electric blue, orange and a warm cream give the collective a bold palette for posts, open calls, booklets, hoodies and tote bags."
+    },
+    {
+      "type": "full",
+      "image": "/img/krd-4.jpg"
+    },
+    {
+      "type": "images",
+      "layout": "trio",
+      "images": [
+        "/img/krd-1.jpg",
+        "/img/krd-2.jpg",
+        "/img/krd-7.jpg"
+      ]
+    },
+    {
+      "type": "feed",
+      "image": "/img/krd-ig.jpg",
+      "url": "https://www.instagram.com/krdcollective_/",
+      "handle": "@krdcollective_"
+    }
+  ]
+}

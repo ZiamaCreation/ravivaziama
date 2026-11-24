@@ -1,0 +1,67 @@
+{
+  "order": 4,
+  "slug": "le-coup-de-foudre",
+  "title": "Le Coup de Foudre",
+  "year": "2022",
+  "kind": "Queer short film · Melodrama · Psychological horror",
+  "meta": [
+    "Colour",
+    "7:38 min",
+    "UdK Berlin"
+  ],
+  "cover": "/img/cov-cf.jpg",
+  "hero": "/img/cf-3.jpg",
+  "orient": "land",
+  "lead": "Two women, one apartment and a sudden, overwhelming attraction. A stylised queer love story between melodrama and horror.",
+  "text": [
+    "Le Coup de Foudre explores the fleeting intensity of love at first sight and the darker emotions that follow. Without conventional dialogue, slow-motion imagery and an unsettling soundtrack carry the story as desire turns into obsession, jealousy and loss.",
+    "The film and an accompanying photographic series were shown at PH0N0L0GUES, a feminist exhibition in Berlin on heartbreak and the five stages of grief (14 February 2023)."
+  ],
+  "watch": {
+    "label": "Watch on Vimeo",
+    "url": "https://vimeo.com/753587864"
+  },
+  "video": "",
+  "video_poster": "",
+  "stills": [
+    "/img/cf-2.jpg",
+    "/img/cf-4.jpg",
+    "/img/cf-1.jpg"
+  ],
+  "feature": "/img/cf-5.jpg",
+  "feature_after": 3,
+  "columns": 3,
+  "voices": [],
+  "bts": {
+    "title": "Behind the scenes",
+    "images": [
+      "/img/cf-bts2.jpg",
+      "/img/cf-bts1.jpg",
+      "/img/cf-bts4.jpg",
+      "/img/cf-bts5.jpg",
+      "/img/cf-bts6.jpg",
+      "/img/cf-bts7.jpg",
+      "/img/cf-6.jpg",
+      "/img/cf-7.jpg"
+    ]
+  },
+  "credits": [
+    {
+      "role": "A film by",
+      "name": "Raviva Nsiama · Moana Marie Schorlemer · Pauline Pyras"
+    },
+    {
+      "role": "Starring",
+      "name": "Anna Notova · Ellie Treptow"
+    },
+    {
+      "role": "Costume",
+      "name": "Charlotte Schwärmer"
+    }
+  ],
+  "screenings": [
+    "PH0N0L0GUES, Berlin · 2023"
+  ],
+  "awards": [],
+  "laurels": []
+}

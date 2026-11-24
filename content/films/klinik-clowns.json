@@ -1,0 +1,66 @@
+{
+  "order": 6,
+  "slug": "klinik-clowns",
+  "title": "Klinik Clowns – Lachen hilft",
+  "year": "2023",
+  "kind": "Documentary short film",
+  "meta": [
+    "Live action",
+    "UdK Berlin",
+    "Moving Image, WS 2023/24"
+  ],
+  "cover": "/img/cov-cl.jpg",
+  "hero": "/img/cl-3.jpg",
+  "orient": "land",
+  "lead": "Specially trained artists who visit hospitals and care homes. A film about humour, sensitivity and the human connection they create.",
+  "text": [
+    "The film follows hospital clowns from preparation to the visit itself, navigating the contrast between institutional routines and moments of warmth, playfulness and vulnerability.",
+    "A restrained, observational perspective alternates with composed passages: central perspective, ambient sound and close-ups that foreground exchange and emotion."
+  ],
+  "video": "",
+  "video_poster": "",
+  "stills": [
+    "/img/cl-5.jpg",
+    "/img/cl-2.jpg",
+    "/img/cl-1.jpg",
+    "/img/cl-6.jpg",
+    "/img/cl-7.jpg",
+    "/img/cl-8.jpg"
+  ],
+  "feature": "/img/cl-4.jpg",
+  "feature_after": 3,
+  "columns": 3,
+  "voices": [],
+  "mood": {
+    "image": "/img/nb-cl.webp",
+    "text": [
+      "The treatment set two modes against each other: a restrained, observational camera for the routines of the clinic, and composed passages for the moments of exchange.",
+      "Central perspective, ambient sound and close-ups: the notebook gathers the references for both, from the preparation backstage to the visit itself."
+    ]
+  },
+  "bts": {
+    "title": "Behind the scenes",
+    "images": [
+      "/img/cl-bts.jpg",
+      "/img/cl-bts2.jpg",
+      "/img/cl-bts3.jpg",
+      "/img/cl-bts4.jpg",
+      "/img/cl-bts5.jpg",
+      "/img/cl-bts6.jpg",
+      "/img/cl-bts7.jpg"
+    ]
+  },
+  "credits": [
+    {
+      "role": "Concept & treatment",
+      "name": "Raviva Nsiama & Pauline Pyras"
+    },
+    {
+      "role": "Protagonists",
+      "name": "Tanja Selmer (Tiffy) · Andreas Boehlke (Tute Caruso)"
+    }
+  ],
+  "screenings": [],
+  "awards": [],
+  "laurels": []
+}

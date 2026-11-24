@@ -1,0 +1,54 @@
+{
+  "order": 7,
+  "slug": "faceit",
+  "title": "Faceit",
+  "year": "2020",
+  "kind": "Photo series",
+  "meta": [
+    "Photography",
+    "Styling · Staging"
+  ],
+  "cover": "/img/wn-5.jpg",
+  "hero": "/img/wn-5.jpg",
+  "orient": "port",
+  "lead": "A photographic exploration of femininity, tenderness and the beauty of simply existing.",
+  "text": [
+    "Set against an open landscape, two Black women move through nature, their silhouettes embraced by delicate layers of tulle. The series romanticises womanhood through softness, form and presence, allowing femininity to exist without explanation or expectation.",
+    "An intimate celebration of beauty, vulnerability and the quiet poetry of being a woman."
+  ],
+  "watch": {
+    "label": "Whitney Kiala on Instagram",
+    "url": "https://www.instagram.com/whitneykiala/"
+  },
+  "video": "",
+  "video_poster": "",
+  "stills": [
+    "/img/wn-1.jpg",
+    "/img/wn-2.jpg",
+    "/img/wn-3.jpg",
+    "/img/wn-4.jpg",
+    "/img/wn-6.jpg",
+    "/img/wn-7.jpg"
+  ],
+  "feature": "",
+  "feature_after": 0,
+  "columns": 3,
+  "voices": [],
+  "credits": [
+    {
+      "role": "Concept",
+      "name": "Whitney Kiala & Bodhi Samba"
+    },
+    {
+      "role": "Direction",
+      "name": "Whitney Kiala"
+    },
+    {
+      "role": "Photography",
+      "name": "Raviva Nsiama"
+    }
+  ],
+  "screenings": [],
+  "awards": [],
+  "laurels": []
+}

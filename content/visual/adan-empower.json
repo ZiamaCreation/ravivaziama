@@ -1,0 +1,47 @@
+{
+  "order": 5,
+  "slug": "adan-empower",
+  "title": "ADAN Empower",
+  "year": "2026",
+  "sort_year": "2026",
+  "kind": "Logo redesign · Key visuals · Social media templates",
+  "cover": "/img/adan-3.jpg",
+  "role": "Logo redesign, key visuals, carousels and templates for Instagram and LinkedIn",
+  "lead": "Logo redesign, key visuals and templates for a pilot project against anti-Black racism in access to the job market.",
+  "blocks": [
+    {
+      "type": "textimg",
+      "image": "/img/adan-l1.jpg",
+      "title": "Origin",
+      "text": "ADAN Empower is a federally funded pilot project that shows what works against anti-Black racism in access to the job market. For its launch, the project needed a mark and a voice that make a complex offer easy to approach.",
+      "side": "r"
+    },
+    {
+      "type": "kit",
+      "image": "/img/adan-kit.jpg",
+      "caption": "Brand guidelines board · logo, palette, typography and applications"
+    },
+    {
+      "type": "images",
+      "layout": "pair",
+      "images": [
+        "/img/adan-l2.jpg",
+        "/img/adan-l3.jpg"
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Concept & design decisions",
+      "text": "Above the wordmark, an open, fragmented outline in signal orange; below it, “Empower” sits on a slightly tilted label, like a stamp of approval. From the mark came the key visuals, carousels for Instagram and LinkedIn and a set of templates the team now uses itself: complex topics broken into clear steps, held together by one orange line."
+    },
+    {
+      "type": "images",
+      "layout": "trio",
+      "images": [
+        "/img/adan-3.jpg",
+        "/img/adan-1.jpg",
+        "/img/adan-4.jpg"
+      ]
+    }
+  ]
+}

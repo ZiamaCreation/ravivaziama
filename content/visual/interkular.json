@@ -1,0 +1,56 @@
+{
+  "order": 3,
+  "slug": "interkular",
+  "title": "Interkular · Erzählfestival",
+  "year": "2022",
+  "sort_year": "2022",
+  "kind": "Social media · Content creation · Visual storytelling",
+  "cover": "/img/ik-cover2.jpg",
+  "role": "Instagram communication, visual content, on-site photo and video",
+  "lead": "Instagram communication and visual storytelling for a neighbourhood festival in Berlin-Neukölln.",
+  "blocks": [
+    {
+      "type": "textimg",
+      "image": "/img/ik-ig.jpg",
+      "title": "Origin",
+      "text": "interkular is a non-profit organisation in Berlin-Neukölln working for solidarity, social participation and encounter. For the Erzählfestival, Raviva ran the Instagram communication and developed visual content to introduce the festival and its artists. On site she produced photo and video material, documented the festival and made the people behind it visible.",
+      "side": "r"
+    },
+    {
+      "type": "images",
+      "layout": "quad",
+      "images": [
+        "/img/ik-e1.jpg",
+        "/img/ik-e2.jpg",
+        "/img/ik-e3.jpg",
+        "/img/ik-e4.jpg"
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Concept & design decisions",
+      "text": "As a family-friendly neighbourhood festival, the Erzählfestival was meant to bring together people of different generations and backgrounds. Raviva chose a lively, playful and accessible design that sparks curiosity and reflects the open, communal atmosphere of the festival."
+    },
+    {
+      "type": "strip",
+      "title": "More for interkular · Newroz carousel",
+      "images": [
+        "/img/ik-nw1.jpg",
+        "/img/ik-nw2.jpg",
+        "/img/ik-nw3.jpg",
+        "/img/ik-nw4.jpg",
+        "/img/ik-nw5.jpg"
+      ]
+    },
+    {
+      "type": "links",
+      "title": "Instagram",
+      "items": [
+        {
+          "label": "@interkular",
+          "url": "https://www.instagram.com/interkular/"
+        }
+      ]
+    }
+  ]
+}

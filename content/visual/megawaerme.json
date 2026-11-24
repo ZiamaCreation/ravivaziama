@@ -1,0 +1,46 @@
+{
+  "order": 7,
+  "slug": "megawaerme",
+  "title": "Megawärme",
+  "year": "2026",
+  "sort_year": "2026",
+  "kind": "Logo design · Pattern",
+  "cover": "/img/mw-2.jpg",
+  "role": "Logo, pattern, stationery",
+  "lead": "Two arches, two dots, a double M. Logo and pattern for renewable heat.",
+  "blocks": [
+    {
+      "type": "textimg",
+      "image": "/img/mw-1.jpg",
+      "title": "Origin",
+      "text": "Megawärme plans and builds renewable heating and cooling for existing buildings. The brand needed to feel soft and approachable, and at the same time precise.",
+      "side": "r"
+    },
+    {
+      "type": "images",
+      "layout": "trio",
+      "images": [
+        "/img/mw-2.jpg",
+        "/img/mw-3.jpg",
+        "/img/mw-4.jpg"
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Concept & design decisions",
+      "text": "The diameter of the dot is the module of the whole brand, and the mark is exactly five modules wide. Repeated, it becomes a pattern for business cards, the web and the building site."
+    },
+    {
+      "type": "full",
+      "image": "/img/mw-7.jpg"
+    },
+    {
+      "type": "images",
+      "layout": "pair",
+      "images": [
+        "/img/mw-8.jpg",
+        "/img/mw-9.jpg"
+      ]
+    }
+  ]
+}

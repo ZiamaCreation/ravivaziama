@@ -1,0 +1,125 @@
+{
+  "order": 2,
+  "slug": "lumiere-devoilee",
+  "title": "Lumière Dévoilée",
+  "year": "2025",
+  "kind": "Photo series & publication",
+  "meta": [
+    "Master’s project",
+    "UdK Berlin",
+    "Photography · Performance · Publication"
+  ],
+  "cover": "/img/cov-lum.jpg",
+  "hero": "/img/lum-2.jpg",
+  "orient": "port",
+  "lead": "Unveiled light. A visual project on Black presence, bodies and representation, and a counter-archive to the silences of European art history.",
+  "text": [
+    "The starting point was an absence noticed in Berlin’s Gemäldegalerie: why are Black people so rarely present in Europe’s painted memory, and when they appear, how are they shown?",
+    "Drawing on Judith Butler’s idea of performativity, the project reads images as performances that stage roles and decide what counts as visible. It sets two body practices side by side, ballet and pole dance, as spaces carrying different narratives of discipline, desire, control and resistance.",
+    "In the staged photographs, Black performers present their bodies deliberately, as subjects rather than objects. The accompanying magazine gathers images, interviews and theory into a counter-archive: light unveiled not as a spotlight, but as dignity."
+  ],
+  "video": "/media/lumiere-book.mp4",
+  "video_poster": "/img/lum-book-poster.jpg",
+  "stills": [
+    "/img/lx-01.jpg",
+    "/img/lx-02.jpg",
+    "/img/lx-06.jpg",
+    "/img/lx-03.jpg",
+    "/img/lx-05.jpg",
+    "/img/lx-09.jpg",
+    "/img/lx-08.jpg",
+    "/img/lx-12.jpg",
+    "/img/lx-13.jpg"
+  ],
+  "feature": "/img/lx-11.jpg",
+  "feature_after": 3,
+  "columns": 3,
+  "voices": [
+    {
+      "name": "Mara Veena",
+      "role": "pole performer",
+      "quotes": [
+        "I can express myself in ways that I don’t always have the luxury to do on a day to day basis.",
+        "I wish my audience understood that I am not an object, nor am I a walking monolith.",
+        "It is an honor to own your sexuality and commodify it without there being an inherent devaluing of our bodies or existence."
+      ]
+    },
+    {
+      "name": "Azza Bashir",
+      "role": "dancer, trained in classical ballet",
+      "quotes": [
+        "I never felt I had to shrink, it was more the opposite, taking up space and dancing to my capacity to prove I deserved to be here.",
+        "On stage, it somehow comes naturally. I am my true self and I shine authentically, allowing myself to give and receive energy."
+      ]
+    }
+  ],
+  "mood": {
+    "image": "/img/nb-lum.webp",
+    "text": [
+      "It began with an absence in Berlin’s Gemäldegalerie: why are Black people so rarely present in Europe’s painted memory, and when they appear, how are they shown?",
+      "The notebook brings together the paintings in which Black figures stand at the margins, ballet and pole dance as two opposing body practices, and the materials of the shoot: corsets, pearls, lace and ribbons."
+    ]
+  },
+  "bts": {
+    "title": "Material",
+    "images": [
+      "/img/lx-14.jpg",
+      "/img/lx-15.jpg",
+      "/img/lx-16.jpg",
+      "/img/lx-17.jpg",
+      "/img/lx-18.jpg",
+      "/img/lx-19.jpg",
+      "/img/lx-20.jpg",
+      "/img/lx-21.jpg"
+    ]
+  },
+  "credits": [
+    {
+      "role": "Creative art direction",
+      "name": "Raviva Nsiama"
+    },
+    {
+      "role": "Performance",
+      "name": "Azza Bashir · Mara Veena"
+    },
+    {
+      "role": "Photography",
+      "name": "Till Millius"
+    },
+    {
+      "role": "Styling assistant & set runner",
+      "name": "Nina Krause"
+    },
+    {
+      "role": "Lighting assistant & video",
+      "name": "Pauline Pyras"
+    },
+    {
+      "role": "Make-up",
+      "name": "Jette Kraus"
+    },
+    {
+      "role": "Beauty retouching & colour grading",
+      "name": "Shelley Kotomski"
+    },
+    {
+      "role": "Set runner",
+      "name": "Anna Notova"
+    },
+    {
+      "role": "Graphic design",
+      "name": "Katharina Thewathida · Hani Wibowo"
+    },
+    {
+      "role": "Context",
+      "name": "Master’s thesis, Visual Communication, UdK Berlin"
+    }
+  ],
+  "screenings": [
+    "UdK Rundgang, Berlin · 2025"
+  ],
+  "awards": [
+    "Best master’s degree · Deutsch-Kongolesischer Bildungspreis 2026"
+  ],
+  "laurels": []
+}

@@ -1,0 +1,59 @@
+{
+  "order": 5,
+  "slug": "sirene-perdue",
+  "title": "Sirène Perdue",
+  "year": "2022",
+  "kind": "Experimental performance short",
+  "meta": [
+    "Colour",
+    "3:18 min",
+    "UdK Berlin"
+  ],
+  "cover": "/img/cov-sp.jpg",
+  "hero": "/img/sp-1.jpg",
+  "orient": "land",
+  "lead": "A figure awakens in a forest, covered in moss and bound by roots. A poetic short film about losing oneself and finding a way back.",
+  "text": [
+    "Unable to recognise herself in an unfamiliar body, she struggles to break free. Her escape leads to a white cocoon where movement becomes transformation; emerging in a tulle dress, she follows the sound of sirens towards the water.",
+    "Rather than explaining the inner journey through dialogue, the film gives central importance to movement, texture, costume and the transformation of the body."
+  ],
+  "watch": {
+    "label": "Watch on Vimeo",
+    "url": "https://vimeo.com/695160727"
+  },
+  "video": "",
+  "video_poster": "",
+  "stills": [
+    "/img/sp-f10.jpg",
+    "/img/sp-f12.jpg",
+    "/img/sp-f2.jpg",
+    "/img/sp-f4.jpg",
+    "/img/sp-f6.jpg",
+    "/img/sp-f7.jpg"
+  ],
+  "feature": "/img/sp-f11.jpg",
+  "feature_after": 3,
+  "columns": 3,
+  "voices": [],
+  "credits": [
+    {
+      "role": "A film by",
+      "name": "Raviva Nsiama"
+    },
+    {
+      "role": "Cast",
+      "name": "Nina Schuster · Raviva Nsiama"
+    },
+    {
+      "role": "Director of Photography",
+      "name": "Sofia Margesin"
+    },
+    {
+      "role": "Dresses",
+      "name": "Judith Bondy"
+    }
+  ],
+  "screenings": [],
+  "awards": [],
+  "laurels": []
+}

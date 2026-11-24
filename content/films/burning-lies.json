@@ -1,0 +1,154 @@
+{
+  "order": 1,
+  "slug": "burning-lies",
+  "title": "Burning Lies",
+  "year": "2026",
+  "kind": "Experimental short film",
+  "meta": [
+    "Germany",
+    "10:15 min",
+    "English · German · Lingala · Kikongo"
+  ],
+  "cover": "/img/cov-bl.jpg",
+  "hero": "/img/bl-4.jpg",
+  "orient": "land",
+  "lead": "Who are you? A poetic, multilingual short film about the fictions we tell ourselves in order to survive, belong and move through the world, and the process of letting them burn away.",
+  "text": [
+    "Official selections on three continents in 2026. Through an Afrodiasporic lens, Burning Lies traces an intimate journey of self-discovery, confronting inherited expectations, projections and limiting beliefs.",
+    "Guided by poems written and performed by Dorcas Nsiama, the film moves between the Baltic coast near Rostock, dreamlike interiors and a digitally imagined Congolese rainforest. English, German, Lingala and Kikongo interweave as the protagonist moves toward a symbolic rebirth beyond illusion and ego."
+  ],
+  "watch": {
+    "label": "Screener on request",
+    "url": ""
+  },
+  "video": "",
+  "video_poster": "",
+  "stills": [
+    "/img/bl-3.jpg",
+    "/img/bl-7.jpg",
+    "/img/bl-6.jpg",
+    "/img/bl-9.jpg",
+    "/img/bl-2.jpg",
+    "/img/bl-1.jpg"
+  ],
+  "feature": "/img/bl-8.jpg",
+  "feature_after": 3,
+  "columns": 3,
+  "voices": [],
+  "mood": {
+    "image": "/img/nb-bl.webp",
+    "text": [
+      "The visual concept collected the three worlds of the film: the Baltic coast near Rostock, dreamlike interiors and a digitally imagined Congolese rainforest.",
+      "The notebook gathers textures, gestures and light for each of them, and the images that connect the poems by Dorcas Nsiama to the screen."
+    ]
+  },
+  "bts": {
+    "title": "Storyboard",
+    "images": [
+      "/img/bl-sb1.jpg",
+      "/img/bl-sb2.jpg",
+      "/img/bl-sb3.jpg",
+      "/img/bl-sb4.jpg"
+    ]
+  },
+  "credits": [
+    {
+      "role": "Director",
+      "name": "Raviva Nsiama"
+    },
+    {
+      "role": "Written & performed by",
+      "name": "Dorcas Nsiama"
+    },
+    {
+      "role": "Director of Photography",
+      "name": "Pauline Pyras"
+    },
+    {
+      "role": "1st Assistant Camera",
+      "name": "Michl Best"
+    },
+    {
+      "role": "Assistant director & photography",
+      "name": "Nina Krause"
+    },
+    {
+      "role": "Sound Design & Mastering",
+      "name": "Stefan Weith"
+    },
+    {
+      "role": "Colorist",
+      "name": "Aljoscha Hoffmann"
+    },
+    {
+      "role": "Visual Effects",
+      "name": "Ernst August Graefe"
+    },
+    {
+      "role": "Kikongo Translation",
+      "name": "Mbuta Luemba"
+    },
+    {
+      "role": "Set & production design",
+      "name": "Dorcas & Raviva Nsiama"
+    },
+    {
+      "role": "Music",
+      "name": "“Lament of the Past”, Taizo Audio"
+    }
+  ],
+  "screenings": [
+    "PREVYOU, Berlin · 29.05.2026",
+    "Paris Lift-Off · online · 2026",
+    "Afrika Film Festival Köln · 25.09.2026",
+    "Reel to Reality, Johannesburg · 17.10.2026",
+    "FAME Shorts, Cape Town · 31.10.2026",
+    "Aesthetica Film Festival, York · Nov 2026",
+    "Black Harvest, Chicago · 10.11.2026",
+    "African Film and Art Festival · 2026",
+    "INTERFILM Berlin · 11.–14.11.2026",
+    "Schaubühne Lindenfels, Leipzig · 20.11.2026"
+  ],
+  "awards": [
+    "Winner · Best Makeup & Styling, FAME Shorts 2026",
+    "Nomination · Best Cinematography, FAME Shorts 2026"
+  ],
+  "laurels": [
+    {
+      "image": "/img/laurel-prevyou.png",
+      "alt": "PREVYOU Kurzfilmfestival Berlin – Official Selection 2026"
+    },
+    {
+      "image": "/img/laurel-interfilm.png",
+      "alt": "INTERFILM Berlin – Official Selection 2026"
+    },
+    {
+      "image": "/img/laurel-koeln.png",
+      "alt": "Afrika Film Festival Köln – Official Selection 2026"
+    },
+    {
+      "image": "/img/laurel-blackharvest.png",
+      "alt": "Black Harvest Film Festival – Official Selection 2026"
+    },
+    {
+      "image": "/img/laurel-aesthetica.png",
+      "alt": "Aesthetica Film Festival – Official Selection 2026"
+    },
+    {
+      "image": "/img/laurel-fame.png",
+      "alt": "FAME Shorts Film Festival – Official Selection 2026"
+    },
+    {
+      "image": "/img/laurel-afaf.png",
+      "alt": "African Film and Art Festival – Official Selection 2026"
+    },
+    {
+      "image": "/img/laurel-reel.png",
+      "alt": "Reel to Reality Film Festival – Official Selection 2026"
+    },
+    {
+      "image": "/img/laurel-paris.png",
+      "alt": "Paris Lift-Off Film Festival – Official Selection 2026"
+    }
+  ]
+}

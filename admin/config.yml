@@ -1,0 +1,270 @@
+# Bearbeitungsoberfläche für ravivaziama.com (Sveltia CMS)
+# Anmelden: „Sign In with Token“ und einen GitHub-Token einfügen (siehe Anleitung).
+backend:
+  name: github
+  repo: ZiamaCreation/ravivaziama
+  branch: main
+  commit_messages:
+    create: "Neu: {{collection}} „{{slug}}“"
+    update: "Geändert: {{collection}} „{{slug}}“"
+    delete: "Gelöscht: {{collection}} „{{slug}}“"
+    uploadMedia: "Datei hochgeladen: {{path}}"
+    deleteMedia: "Datei gelöscht: {{path}}"
+
+site_url: https://ravivaziama.com
+display_url: https://ravivaziama.com
+logo:
+  src: /img/emboss.webp
+
+media_folder: img
+public_folder: /img
+
+collections:
+
+  # ───────────────────────── FILME ─────────────────────────
+  - name: films
+    label: "Art / Film"
+    label_singular: "Film / Projekt"
+    description: "Filme und Fotoserien unter ART/FILM. Reihenfolge über das Feld „Position“."
+    folder: content/films
+    format: json
+    extension: json
+    create: true
+    slug: "{{fields.slug}}"
+    identifier_field: title
+    summary: "{{order}} · {{title}} ({{year}})"
+    sortable_fields: [order, title, year]
+    fields:
+      - {name: order, label: "Position in der Liste", widget: number, value_type: int, default: 99}
+      - {name: hidden, label: "Verstecken (nicht auf der Website zeigen)", widget: boolean, default: false, required: false}
+      - {name: title, label: "Titel", widget: string}
+      - {name: slug, label: "Adresse (nur Kleinbuchstaben und Bindestriche, z. B. burning-lies)", widget: string, pattern: ['^[a-z0-9-]+$', "Nur a–z, 0–9 und -"]}
+      - {name: year, label: "Jahr", widget: string}
+      - {name: kind, label: "Art (z. B. Experimental short film)", widget: string}
+      - {name: meta, label: "Infos in der Kopfzeile (z. B. Land, Länge, Sprachen)", widget: list, required: false, field: {name: item, label: "Info", widget: string}}
+      - {name: cover, label: "Cover (Hochformat, für die Übersicht)", widget: image}
+      - {name: hero, label: "Großes Titelbild oben (Querformat)", widget: image}
+      - {name: orient, label: "Format der Stills", widget: select, options: [{label: "Querformat", value: land}, {label: "Hochformat", value: port}], default: land}
+      - {name: lead, label: "Einleitung (fett)", widget: text}
+      - {name: text, label: "Weitere Absätze", widget: list, required: false, field: {name: p, label: "Absatz", widget: text}}
+      - name: watch
+        label: "Button (z. B. Watch on Vimeo)"
+        widget: object
+        required: false
+        fields:
+          - {name: label, label: "Beschriftung", widget: string, required: false}
+          - {name: url, label: "Link (leer = führt zu Kontakt)", widget: string, required: false}
+      - {name: video, label: "Video-Datei (optional)", widget: file, required: false, media_folder: media, public_folder: /media}
+      - {name: video_poster, label: "Vorschaubild des Videos", widget: image, required: false}
+      - {name: stills, label: "Stills", widget: list, required: false, field: {name: image, label: "Bild", widget: image}}
+      - {name: feature, label: "Großes Still (optional)", widget: image, required: false}
+      - {name: feature_after, label: "Großes Still nach wie vielen Stills?", widget: number, value_type: int, default: 3, required: false}
+      - {name: columns, label: "Spalten im Still-Raster", widget: number, value_type: int, default: 3, required: false}
+      - name: voices
+        label: "Zitate (Voices)"
+        widget: list
+        required: false
+        fields:
+          - {name: name, label: "Name", widget: string}
+          - {name: role, label: "Rolle", widget: string}
+          - {name: quotes, label: "Zitate", widget: list, field: {name: q, label: "Zitat", widget: text}}
+      - name: mood
+        label: "Moodboard & Konzept"
+        widget: object
+        required: false
+        fields:
+          - {name: image, label: "Moodboard-Bild", widget: image, required: false}
+          - {name: text, label: "Absätze", widget: list, required: false, field: {name: p, label: "Absatz", widget: text}}
+      - name: bts
+        label: "Weitere Bilder (Storyboard / Behind the scenes)"
+        widget: object
+        required: false
+        fields:
+          - {name: title, label: "Überschrift", widget: string, required: false}
+          - {name: images, label: "Bilder", widget: list, required: false, field: {name: image, label: "Bild", widget: image}}
+      - name: credits
+        label: "Team / Credits"
+        widget: list
+        required: false
+        summary: "{{fields.role}}: {{fields.name}}"
+        fields:
+          - {name: role, label: "Rolle", widget: string}
+          - {name: name, label: "Name", widget: string}
+      - {name: screenings, label: "Screenings", widget: list, required: false, field: {name: s, label: "Screening", widget: string}}
+      - {name: awards, label: "Auszeichnungen", widget: list, required: false, field: {name: a, label: "Auszeichnung", widget: string}}
+      - name: laurels
+        label: "Festival-Lorbeeren"
+        widget: list
+        required: false
+        fields:
+          - {name: image, label: "Bild (PNG)", widget: image}
+          - {name: alt, label: "Beschreibung (z. B. INTERFILM Berlin – Official Selection 2026)", widget: string}
+
+  # ───────────────────────── VISUAL WORKS ─────────────────────────
+  - name: visual
+    label: "Visual Works"
+    label_singular: "Visual-Work-Projekt"
+    description: "Design-Projekte. Jede Seite besteht aus Bausteinen, die du frei anordnen kannst."
+    folder: content/visual
+    format: json
+    extension: json
+    create: true
+    slug: "{{fields.slug}}"
+    identifier_field: title
+    summary: "{{order}} · {{title}} ({{year}})"
+    sortable_fields: [order, title]
+    fields:
+      - {name: order, label: "Position in der Liste", widget: number, value_type: int, default: 99}
+      - {name: hidden, label: "Verstecken (nicht auf der Website zeigen)", widget: boolean, default: false, required: false}
+      - {name: title, label: "Titel", widget: string}
+      - {name: slug, label: "Adresse (nur Kleinbuchstaben und Bindestriche)", widget: string, pattern: ['^[a-z0-9-]+$', "Nur a–z, 0–9 und -"]}
+      - {name: year, label: "Jahr (wie angezeigt, z. B. 2022–2024)", widget: string}
+      - {name: sort_year, label: "Jahr zum Sortieren (nur Zahl, z. B. 2024)", widget: string}
+      - {name: kind, label: "Art (z. B. Logo · Social media · Merch)", widget: string}
+      - {name: cover, label: "Cover (Format 4:5)", widget: image}
+      - {name: lead, label: "Einleitung", widget: text}
+      - {name: role, label: "Rolle", widget: string}
+      - name: blocks
+        label: "Bausteine der Projektseite"
+        label_singular: "Baustein"
+        widget: list
+        required: false
+        types:
+          - name: textimg
+            label: "Text + Bild"
+            fields:
+              - {name: title, label: "Überschrift", widget: string}
+              - {name: text, label: "Text", widget: text}
+              - {name: image, label: "Bild", widget: image}
+              - {name: side, label: "Bild auf welcher Seite?", widget: select, options: [{label: "rechts", value: r}, {label: "links", value: l}], default: r}
+          - name: text
+            label: "Nur Text"
+            fields:
+              - {name: title, label: "Überschrift", widget: string}
+              - {name: text, label: "Text", widget: text}
+          - name: kit
+            label: "Brand-Kit (großes Bild mit Bildunterschrift)"
+            fields:
+              - {name: image, label: "Bild", widget: image}
+              - {name: caption, label: "Bildunterschrift", widget: string}
+          - name: full
+            label: "Ein großes Bild"
+            fields:
+              - {name: image, label: "Bild", widget: image}
+          - name: images
+            label: "Bildergruppe (2, 3 oder 4 Bilder)"
+            fields:
+              - {name: layout, label: "Anordnung", widget: select, options: [{label: "2 Bilder versetzt", value: pair}, {label: "3 Bilder", value: trio}, {label: "4 Bilder", value: quad}], default: trio}
+              - {name: images, label: "Bilder", widget: list, field: {name: image, label: "Bild", widget: image}}
+          - name: strip
+            label: "Bilderreihe mit Überschrift (z. B. Carousel)"
+            fields:
+              - {name: title, label: "Überschrift", widget: string}
+              - {name: images, label: "Bilder", widget: list, field: {name: image, label: "Bild", widget: image}}
+          - name: palette
+            label: "Farbpalette"
+            fields:
+              - name: colors
+                label: "Farben"
+                widget: list
+                fields:
+                  - {name: hex, label: "Farbcode (z. B. #342EF7)", widget: string}
+                  - {name: label, label: "Name", widget: string}
+          - name: feed
+            label: "Instagram-Feed"
+            fields:
+              - {name: image, label: "Screenshot des Feeds", widget: image}
+              - {name: url, label: "Link zum Profil", widget: string}
+              - {name: handle, label: "Name (z. B. @krdcollective_)", widget: string}
+          - name: video
+            label: "Video"
+            fields:
+              - {name: video, label: "Video-Datei", widget: file, media_folder: media, public_folder: /media}
+              - {name: poster, label: "Vorschaubild", widget: image}
+          - name: portraits
+            label: "Porträts mit Links"
+            fields:
+              - name: items
+                label: "Porträts"
+                widget: list
+                fields:
+                  - {name: image, label: "Bild", widget: image}
+                  - {name: name, label: "Name", widget: string}
+                  - {name: url, label: "Link", widget: string}
+          - name: links
+            label: "Linkliste"
+            fields:
+              - {name: title, label: "Überschrift", widget: string}
+              - name: items
+                label: "Links"
+                widget: list
+                fields:
+                  - {name: label, label: "Text", widget: string}
+                  - {name: url, label: "Link", widget: string}
+
+  # ───────────────────────── SEITEN & LISTEN ─────────────────────────
+  - name: pages
+    label: "Seiten & Listen"
+    files:
+      - name: pages
+        label: "Startseite & About"
+        file: content/pages.json
+        format: json
+        fields:
+          - name: home
+            label: "Startseite"
+            widget: object
+            fields:
+              - {name: heading, label: "Überschrift", widget: string}
+              - {name: text, label: "Absätze", widget: list, field: {name: p, label: "Absatz", widget: text}}
+          - name: about
+            label: "About me"
+            widget: object
+            fields:
+              - {name: text, label: "Biografie (Absätze)", widget: list, field: {name: p, label: "Absatz", widget: text}}
+              - {name: note, label: "Hinweis zur Aussprache", widget: string}
+              - name: facts
+                label: "Kurzinfos (Based in, Languages …)"
+                widget: list
+                fields:
+                  - {name: label, label: "Bezeichnung", widget: string}
+                  - {name: value, label: "Wert", widget: string}
+      - name: lists
+        label: "Auszeichnungen, Ausstellungen & Presse"
+        file: content/lists.json
+        format: json
+        fields:
+          - name: awards
+            label: "Awards & Recognition"
+            widget: list
+            summary: "{{fields.when}} · {{fields.title}}"
+            fields:
+              - {name: label, label: "Art (z. B. Winner, Nomination)", widget: string}
+              - {name: title, label: "Titel", widget: string}
+              - {name: details, label: "Details", widget: string}
+              - {name: when, label: "Wann", widget: string}
+              - {name: highlight, label: "Hervorheben", widget: boolean, default: false, required: false}
+          - name: exhibitions
+            label: "Exhibitions & Screenings"
+            widget: list
+            summary: "{{fields.when}} · {{fields.title}}"
+            fields:
+              - {name: when, label: "Wann (z. B. Nov 2026)", widget: string}
+              - {name: title, label: "Veranstaltung", widget: string}
+              - {name: details, label: "Ort", widget: string}
+              - {name: url, label: "Link (optional)", widget: string, required: false}
+          - name: earlier
+            label: "Frühere Ausstellungen (Liste darunter)"
+            widget: list
+            fields:
+              - {name: title, label: "Titel", widget: string}
+              - {name: details, label: "Details", widget: string}
+          - name: press
+            label: "Press & Features"
+            widget: list
+            summary: "{{fields.when}} · {{fields.title}}"
+            fields:
+              - {name: when, label: "Wann", widget: string}
+              - {name: title, label: "Medium", widget: string}
+              - {name: details, label: "Titel / Thema", widget: string}
+              - {name: url, label: "Link (optional)", widget: string, required: false}

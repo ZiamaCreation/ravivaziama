@@ -1,0 +1,35 @@
+{
+  "home": {
+    "heading": "Images are never just images.",
+    "text": [
+      "They carry memory, shape desire and influence how people are perceived. This is the space Raviva Nsiama works within.",
+      "Based in Berlin, the filmmaker and visual artist explores identity, history and belonging through carefully constructed cinematic and photographic worlds, moving between film, performance and visual storytelling."
+    ]
+  },
+  "about": {
+    "text": [
+      "Raviva Nsiama is a filmmaker and visual artist based in Berlin, working across moving image, photography and design. She studied film and visual communication at UdK Berlin, followed by a master’s in advertising and campaigns, and brings a cinematic eye and a strategic mind to everything she makes.",
+      "Her work lives in the space between reality and imagination. She is drawn to identity, memory and the ways we see ourselves and others, questions that also shaped her master’s thesis on the representation of Black figures in Renaissance art. In her films and images, intimate observations and unexpected details meet playful experimentation and a strong cinematic language.",
+      "Alongside her personal projects, she creates visual identities and campaigns for clients who want their stories to feel as considered as they look."
+    ],
+    "note": "A note on the name: Nsiama is pronounced with a Z sound.",
+    "facts": [
+      {
+        "label": "Based in",
+        "value": "Berlin"
+      },
+      {
+        "label": "Studied",
+        "value": "UdK Berlin · MA 2025"
+      },
+      {
+        "label": "Works with",
+        "value": "Film · Image · Motion"
+      },
+      {
+        "label": "Languages",
+        "value": "German · English · French · Lingala"
+      }
+    ]
+  }
+}

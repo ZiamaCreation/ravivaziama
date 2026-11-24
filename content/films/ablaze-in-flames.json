@@ -1,0 +1,66 @@
+{
+  "order": 3,
+  "slug": "ablaze-in-flames",
+  "title": "Ablaze in Flames",
+  "year": "2023",
+  "kind": "Arthouse documentary short",
+  "meta": [
+    "Germany",
+    "3:02 min",
+    "Original title: Ablaze – in Flammen"
+  ],
+  "cover": "/img/ab-poster.jpg",
+  "hero": "/img/ab-3.jpg",
+  "orient": "land",
+  "lead": "“Possibly I can ignite other people’s fires with my work.” A poetic tribute to the passions that move us.",
+  "text": [
+    "Though creative practices differ, art, music, writing and dance can be driven by a shared inner fire. Featuring Lena Whooo and Nicholas Isaiah King Rose, the short documentary celebrates the energy that makes artists create and keep pursuing their dreams."
+  ],
+  "watch": {
+    "label": "Screener on request",
+    "url": ""
+  },
+  "video": "",
+  "video_poster": "",
+  "stills": [
+    "/img/ab-1.jpg",
+    "/img/ab-3.jpg",
+    "/img/ab-4.jpg",
+    "/img/ab-5.jpg"
+  ],
+  "feature": "/img/ab-2.jpg",
+  "feature_after": 2,
+  "columns": 2,
+  "voices": [],
+  "mood": {
+    "image": "/img/nb-ab.webp",
+    "text": [
+      "The concept began with one question, asked in German and French: Wofür brennst du? Pour quoi brûles-tu? What are you burning for?",
+      "The notebook collects the fire as image and as feeling: light, movement and the faces of people who keep creating."
+    ]
+  },
+  "credits": [
+    {
+      "role": "Director & Producer",
+      "name": "Raviva Nsiama"
+    },
+    {
+      "role": "Director of Photography",
+      "name": "Raviva Nsiama & Michl Best"
+    },
+    {
+      "role": "Featuring",
+      "name": "Lena Whooo"
+    },
+    {
+      "role": "Featuring",
+      "name": "Nicholas Isaiah King Rose"
+    }
+  ],
+  "screenings": [
+    "Prometheus Erbe, Culterim Berlin",
+    "NWANYE, Berlin"
+  ],
+  "awards": [],
+  "laurels": []
+}

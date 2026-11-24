@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Raviva Nsiama</title>
+<meta name="description" content="Raviva Nsiama – Berlin-based filmmaker and visual artist. Film, photography, performance and visual communication.">
+<style>
+/* VOICE  editorial, analogue, experimental – and at the same time clear, calm and refined
+   PAPER  scanned paper grain over every page, real tape, an embossed name
+   TYPE   one sans (Lunchtype22) for logo, navigation, text, years and project titles in lists;
+          one header face (New Icon Serif Condensed) for project titles; no script for words
+   LAYOUT hash-routed views = future WordPress pages; content max 1240px */
+@font-face{font-family:"NIS";src:url(fonts/new-icon-serif-cond.woff2) format("woff2");font-display:swap}
+@font-face{font-family:"Besom";src:url(fonts/besom.woff2) format("woff2");font-display:swap}
+@font-face{font-family:"Lunch";src:url(fonts/lunchtype22-medium.woff2) format("woff2");font-display:swap}
+:root{color-scheme:light;--milk:#F7F4F0;--vellum:#EAE0BC;--ox:#41111A;--wedge:#A5BDD5;--baby:#C9DAEA;--cameo:#D8BCAD;--rose:#833945;--dusk:#3957A3;
+--bg:var(--milk);--ink:var(--ox);--mute:#6f5a5c;--line:#41111a26;
+--t:"NIS","Bodoni 72 Condensed","Big Caslon",serif;--h:"Besom","Marker Felt",cursive;--b:"Lunch","Helvetica Neue",Arial,sans-serif}
+*{box-sizing:border-box;min-width:0}
+html{scroll-padding-top:72px}
+body{margin:0;position:relative;background:var(--bg);color:var(--ink);font:16px/1.6 var(--b);overflow-x:clip;-webkit-font-smoothing:antialiased}
+/* scanned paper over everything */
+body::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:99;background:url(img/paper.jpg) 0 0/520px;mix-blend-mode:multiply;opacity:.55}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-weight:400;line-height:1.02;margin:0;text-wrap:balance}
+h2,h3{font-family:var(--b);text-transform:uppercase;letter-spacing:.02em}
+h4{font:12px/1.4 var(--b);margin:0 0 12px;color:var(--mute);text-transform:uppercase;letter-spacing:.12em}
+.band{padding:clamp(32px,5vw,80px) max(5vw,16px)}
+.wrap{max-width:1240px;margin:0 auto}
+.lead{font-size:clamp(18px,1.7vw,21px);line-height:1.5;max-width:46ch}
+.meta{font-size:14px;color:var(--mute);margin:.6em 0 0}
+.kick{font-size:12px;text-transform:uppercase;letter-spacing:.14em;margin:0 0 14px}
+.btn{display:inline-flex;align-items:center;min-height:44px;padding:0 20px;border:1px solid currentColor;border-radius:99px;text-decoration:none;margin-top:12px;font-size:14px;text-transform:uppercase;letter-spacing:.06em}
+.btn:hover{background:var(--ox);color:var(--milk)}
+:focus-visible{outline:2px solid var(--dusk);outline-offset:3px}
+.tape{position:relative}
+.tape::before{content:"";position:absolute;top:-20px;left:50%;width:min(46%,170px);aspect-ratio:500/140;transform:translateX(-50%) rotate(-3deg);background:url(img/tape.webp) center/100% 100% no-repeat;z-index:3;filter:drop-shadow(0 1px 1px #0002)}
+
+/* header – one nav, blur on hover */
+header{position:fixed;top:0;left:0;right:0;z-index:50;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:16px;padding:18px max(3vw,16px);color:#fff;mix-blend-mode:difference;pointer-events:none}
+header a{pointer-events:auto}
+.logo{font:13px/1 var(--b);text-decoration:none;text-transform:uppercase;letter-spacing:.2em;justify-self:start}
+nav{display:flex;gap:4px clamp(24px,4.4vw,72px);flex-wrap:wrap;justify-content:center;text-transform:uppercase;font-size:12px;letter-spacing:.12em}
+header a.nl{display:inline-block;text-decoration:none;padding:10px 0;transition:filter .2s ease-in-out,opacity .6s ease;will-change:transform}
+header a.nl:hover{filter:blur(2px)}
+header a.nl[aria-current]{text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:1px}
+header .in{opacity:0;filter:blur(8px)}
+.view>.band:first-child{padding-top:max(120px,9vw)}
+.view{display:none}.view.on{display:block;animation:fade .6s ease}
+@keyframes fade{from{opacity:0}}
+
+/* home */
+.hhero{position:relative;min-height:100svh;display:grid;align-content:center;justify-items:center;gap:clamp(18px,3vw,36px);padding:110px max(4vw,16px) 64px}
+.hmark{margin:0;display:grid;place-items:center}
+.hmark>*{grid-area:1/1}
+.emboss{position:relative;z-index:2;width:min(400px,70vw);height:auto;filter:drop-shadow(0 2px 3px #0003)}
+.hvid2{filter:grayscale(.2) sepia(.15)}
+.hvid{width:min(210px,38vw);aspect-ratio:1/1.05;object-fit:cover;object-position:50% 30%;filter:grayscale(.2) sepia(.15);box-shadow:0 14px 30px #41111a33}
+.hline{text-transform:uppercase;font-size:12px;letter-spacing:.14em;text-align:center;max-width:48ch;margin:0;color:var(--mute);line-height:1.7}
+.hphoto{position:absolute;right:max(6vw,20px);bottom:8vh;width:clamp(70px,6.5vw,110px);transform:rotate(3deg);box-shadow:0 18px 40px #41111a30;margin:0}
+.hphoto img{width:100%;height:auto}.hphoto.tape::before{width:170%;top:-14px}
+.stillband{height:min(76vh,720px);overflow:hidden;background:var(--ox)}
+.stillband img{width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:clamp(24px,5vw,80px);align-items:start}
+.intro h2{font:400 clamp(32px,3.6vw,52px)/1 var(--t);text-transform:uppercase}
+.intro p{font-size:clamp(17px,1.6vw,21px);line-height:1.55;margin:0 0 .8em;max-width:42ch}
+.laurels{display:flex;flex-wrap:wrap;gap:clamp(18px,3vw,44px) clamp(20px,3.5vw,52px);justify-content:center;align-items:center;padding:36px max(5vw,16px);background:var(--ox)}
+.laurels img{height:clamp(52px,6vw,84px);width:auto}
+.laurels.marq{flex-wrap:nowrap;justify-content:flex-start;overflow:hidden;padding-inline:0;position:relative}
+.laurels.marq::before,.laurels.marq::after{content:"";position:absolute;top:0;bottom:0;width:10%;z-index:2;pointer-events:none}.laurels.marq::before{left:0;background:linear-gradient(90deg,var(--ox),transparent)}.laurels.marq::after{right:0;background:linear-gradient(270deg,var(--ox),transparent)}
+.ltrack{display:flex;align-items:center;gap:clamp(28px,4vw,64px);width:max-content;padding-right:clamp(28px,4vw,64px);animation:marq 45s linear infinite}
+.laurels.marq:hover .ltrack{animation-play-state:paused}
+.ltrack img{flex:none;height:clamp(56px,6vw,84px);width:auto}
+@keyframes marq{to{transform:translateX(-50%)}}
+.sec-h{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:24px}
+.sec-h h2{font:400 clamp(28px,3vw,42px)/1 var(--t);text-transform:uppercase;letter-spacing:0}
+.sec-h a{font-size:13px;text-transform:uppercase;letter-spacing:.1em}
+.row{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(220px,24vw,320px);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px;scrollbar-width:thin}
+.card{text-decoration:none;scroll-snap-align:start;display:block}
+.card .ph{aspect-ratio:4/5;overflow:hidden;background:var(--cameo)}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+.card:hover img{transform:scale(1.03)}
+.card p{margin:12px 0 0;display:grid}
+.card b{font-weight:400;font-size:14px;text-transform:uppercase;letter-spacing:.06em}
+.card span{color:var(--mute);font-size:13px}
+.homemore{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:28px}
+.homemore a{text-decoration:none}
+.homemore .big{font:400 clamp(32px,4vw,56px)/1 var(--h);letter-spacing:.01em}
+.homemore .big:hover,.homemore .sm:hover{filter:blur(1.5px)}
+.homemore .sm{font-size:14px;text-transform:uppercase;letter-spacing:.1em;border-bottom:1px solid currentColor;padding-bottom:4px}
+
+/* work */
+.ptitle{font:400 clamp(40px,5vw,72px)/1 var(--t);text-transform:uppercase;letter-spacing:0}
+.psub{font-size:14px;color:var(--mute);margin:.8em 0 0;text-transform:uppercase;letter-spacing:.12em}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:36px 18px}
+.idxh{font:400 clamp(40px,5vw,72px)/1 var(--t)!important;text-transform:uppercase!important;letter-spacing:0}
+.index{border-top:1px solid var(--line)}
+.irow{display:grid;grid-template-columns:90px minmax(0,1fr) minmax(0,1fr);gap:16px;padding:14px 4px;border-bottom:1px solid var(--line);text-decoration:none;align-items:baseline}
+.irow span{font-size:13px;color:var(--mute)}
+.irow b{font-weight:400;font-size:clamp(15px,1.4vw,18px);text-transform:uppercase;letter-spacing:.06em}
+.irow i{font-style:normal;color:var(--mute);font-size:13px;text-align:right}
+.irow:hover{background:#eae0bc88}
+#peek{position:fixed;width:200px;aspect-ratio:4/5;object-fit:cover;pointer-events:none;z-index:60;opacity:0;transition:opacity .2s;box-shadow:0 20px 40px #41111a40}
+
+/* project pages */
+.phero{position:relative;height:min(78vh,760px);min-height:380px;background:#000;overflow:hidden}
+.phero img{width:100%;height:100%;object-fit:cover;opacity:.88}
+.phero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,#000a)}
+.phero-t{position:absolute;z-index:2;left:max(5vw,16px);right:max(5vw,16px);bottom:clamp(20px,4vw,48px);color:var(--milk)}
+.phero-t h1{font:400 clamp(52px,9vw,140px)/.9 var(--t);text-transform:uppercase}
+.phero-t .meta{color:#f7f4f0d0}
+.pintro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2.2fr);gap:clamp(20px,4vw,64px)}
+.pintro p{font-size:17px;max-width:64ch;margin:0 0 1em}.pintro .lead{font-size:clamp(19px,2vw,23px);max-width:42ch}
+.vidband{padding-top:0}
+.pubvid{margin:0 auto;max-width:860px}
+.pubvid video{width:100%;background:#000;box-shadow:0 24px 60px #41111a30}
+.pubvid figcaption{font-size:13px;color:var(--mute);margin-top:10px;text-align:center}
+.pubvid.ph div{aspect-ratio:16/10;display:grid;place-items:center;text-align:center;border:1px dashed #41111a55;background:#eae0bc55;text-transform:uppercase;letter-spacing:.14em;font-size:13px}
+.pubvid.ph small{display:block;text-transform:none;letter-spacing:0;color:var(--mute);margin-top:6px}
+.sband{padding-top:0}
+.sgrid{display:grid;grid-template-columns:repeat(var(--c,3),minmax(0,1fr));gap:12px;max-width:1120px;margin:0 auto}
+.sband .wrap,.btsband .wrap,.voiceband .wrap{max-width:1120px}
+.sgrid figure{margin:0;overflow:hidden;background:var(--cameo)}
+.sgrid img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.sgrid figure:hover img{transform:scale(1.03)}
+.sgrid.land figure{aspect-ratio:16/10}
+.sgrid.port figure{aspect-ratio:2/3}
+.sgrid .feat{grid-column:1/-1;aspect-ratio:21/9!important;margin-block:clamp(12px,3vw,40px)}
+.moodband{background:#eae0bc66}
+.mood{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(28px,5vw,80px);align-items:center}
+.nb{margin:0;transform:rotate(-2deg);filter:drop-shadow(0 30px 40px #41111a40) drop-shadow(0 6px 10px #41111a22);animation:hover 9s ease-in-out infinite}
+@keyframes hover{50%{transform:rotate(-1.4deg) translateY(-8px)}}
+.nb img{width:100%;height:auto}
+.mood-t p{font-size:17px;max-width:40ch;margin:0 0 1em}
+.bts{columns:4 200px;column-gap:18px;max-width:1120px;margin:0 auto}
+.bts figure{margin:0 0 18px;break-inside:avoid;box-shadow:0 12px 30px #41111a22}
+.bts figure:nth-child(3n+2){margin-top:36px}
+.bts img{width:100%;height:auto}
+.facts{border-top:1px solid var(--line)}
+.fgrid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(24px,4vw,56px)}
+.facts ul{list-style:none;margin:0 0 20px;padding:0;font-size:15px;line-height:1.55}
+.cred i{color:var(--mute);font-style:normal;display:block;font-size:12px;text-transform:uppercase;letter-spacing:.08em}
+.cred li{margin-bottom:8px}
+.next{display:grid;grid-template-columns:minmax(0,1fr) 140px;grid-template-rows:auto auto;gap:4px 24px;align-items:end;text-decoration:none;border-top:1px solid var(--line)}
+.next span{font-size:12px;color:var(--mute);text-transform:uppercase;letter-spacing:.12em}
+.next b{font:400 clamp(36px,5vw,64px)/1 var(--t);text-transform:uppercase;grid-row:2}
+.next img{grid-column:2;grid-row:1/3;width:140px;aspect-ratio:4/5;object-fit:cover}
+.back{font-size:13px;text-decoration:none;color:var(--mute);text-transform:uppercase;letter-spacing:.1em}
+
+/* visual works overview (curated, mixed formats, captions under images) */
+.forma{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:24px;align-items:end}
+.fh{font:400 16px/1.5 var(--b);max-width:36ch;margin:0;color:var(--mute)}
+.vws{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(48px,5vw,80px) clamp(28px,3.4vw,56px);max-width:1040px;margin:0 auto}
+.vw{text-decoration:none;display:block}
+.vw figure{margin:0 0 14px;overflow:hidden;background:var(--cameo)}
+.vw img{width:100%;height:100%;object-fit:cover;transition:transform .9s ease}
+
+.vw figure{aspect-ratio:4/5}
+.vw img{transition:transform .9s ease,filter .5s ease,opacity .5s ease}
+@media(hover:hover){.vws:has(.vw:hover) .vw:not(:hover) img{filter:blur(6px);opacity:.7}.vws:has(.vw:hover) .vw:not(:hover) b,.vws:has(.vw:hover) .vw:not(:hover) span{opacity:.5}.vw b,.vw span{transition:opacity .5s ease}}
+.vw b{display:block;font-weight:400;font-size:14px;text-transform:uppercase;letter-spacing:.08em}
+.vw span{display:block;font-size:13px;color:var(--mute)}
+.vhero{display:grid;grid-template-columns:minmax(0,min(50%,760px,max(80svh,360px))) minmax(0,1fr);align-items:stretch}
+.vh-img{background:#120708;display:grid;place-items:center;overflow:hidden;aspect-ratio:4/5}
+.vh-img img{width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.vh-img img.contain{object-fit:contain;object-position:50% 50%;padding:clamp(24px,4vw,64px);background:var(--milk)}
+.vh-img video{max-height:86vh;width:auto;max-width:100%}
+.vh-t{background:var(--vellum);display:flex;flex-direction:column;justify-content:center;padding:110px clamp(24px,6vw,96px) 48px}
+.vh-t h1{font:400 clamp(44px,5.6vw,84px)/1.02 var(--t);text-transform:uppercase;margin:12px 0 0}
+.vlead{font-size:17px;max-width:40ch;margin:22px 0 0}
+.vmat{columns:3 220px;column-gap:16px;max-width:1120px}
+.vmat figure{margin:0 0 16px;break-inside:avoid;box-shadow:0 12px 30px #41111a1c}
+.vmat img{width:100%;height:auto}
+.vrole{font-size:14px;margin:22px 0 0;max-width:40ch}.vrole i{display:block;font-style:normal;font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:var(--mute);margin-bottom:4px}
+.cs{max-width:1040px;margin:0 auto}
+.cs figure{margin:0}.cs img{width:100%;height:auto}
+.cs-ti{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(28px,6vw,96px);align-items:center}
+.cs-ti.l{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)}.cs-ti.l .cs-t{order:2}
+.cs-ti figure{box-shadow:0 18px 40px #41111a22}
+.cs-t p,.cs-text p{font-size:16px;line-height:1.65;margin:0;max-width:44ch}
+.cs-text{max-width:620px;text-align:left}
+.csk{background:#eae0bc66}
+.kit{max-width:680px;margin:0 auto!important;box-shadow:0 30px 60px #41111a30;background:#fff}
+.kit figcaption{background:var(--milk);font-size:12px;color:var(--mute);padding:10px 0 0;text-align:center}
+.pal{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:14px}
+.pal span{display:block;aspect-ratio:1.4;border:1px solid var(--line);margin-bottom:8px}
+.pal b{display:block;font-weight:400;font-size:13px;text-transform:uppercase;letter-spacing:.08em}.pal i{font-style:normal;font-size:12px;color:var(--mute)}
+.cs-full{box-shadow:0 18px 40px #41111a22}
+.cs-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,3vw,40px);align-items:center}
+.cs-pair figure:nth-child(2){margin-top:clamp(24px,6vw,90px)}
+.cs-trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,2vw,24px);max-width:880px;align-items:start}
+.cs-quad{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.cs-strip{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.cs-pair figure,.cs-trio figure,.cs-quad figure,.cs-strip figure{box-shadow:0 12px 30px #41111a1c}
+.cs-feed{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:clamp(28px,5vw,72px);align-items:center;max-width:900px}
+.cs-feed figure{max-height:720px;overflow:auto;box-shadow:0 20px 50px #41111a2a;background:#fff;scrollbar-width:thin}
+.cs-vid{text-align:center}.cs-vid video{max-height:80vh;margin:0 auto;box-shadow:0 20px 50px #41111a2a}
+.cs-ports{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(12px,2vw,24px)}
+.cs-ports a{text-decoration:none;font-size:13px}.cs-ports figure{margin-bottom:8px;overflow:hidden}.cs-ports img{aspect-ratio:2/3;object-fit:cover;transition:transform .8s ease}.cs-ports a:hover img{transform:scale(1.03)}
+.cs-links ul{list-style:none;padding:0;margin:0;columns:2 260px;column-gap:40px}
+.cs-links li{break-inside:avoid;border-top:1px solid var(--line);padding:9px 0;font-size:15px}.cs-links a{text-decoration:none}
+.voiceband{background:var(--ox);color:var(--milk)}
+.voiceband .sec-h h2{color:var(--milk)}
+.vintro{max-width:56ch;font-size:16px;color:#f7f4f0c0;margin:0 0 32px}
+.voices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(28px,5vw,80px)}
+.voices h4{color:var(--cameo)}
+.voices blockquote{margin:0 0 22px;font:400 clamp(17px,1.5vw,20px)/1.5 var(--b);padding-left:18px;border-left:1px solid #d8bcad66}
+.vtexts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(24px,5vw,80px);border-top:1px solid var(--line);padding-top:32px}
+.vtexts p{font-size:17px;max-width:48ch;margin:0}
+.feedband{background:#eae0bc55}
+.feedhead{display:flex;justify-content:space-between;align-items:baseline;max-width:1040px;margin:0 auto 14px}
+.feedhead a{font-size:14px;text-decoration:none;border-bottom:1px solid currentColor}
+.feed{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:3px;max-width:1040px;margin:0 auto}
+.feed figure{margin:0;overflow:hidden;aspect-ratio:283/373;background:var(--cameo)}
+.feed img{width:100%;height:100%;object-fit:cover}
+.igwrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,80px);align-items:start;max-width:1040px}
+.igshot{margin:0;max-height:860px;overflow-y:auto;box-shadow:0 20px 50px #41111a2a;scrollbar-width:thin;background:#fff}
+.igshot img{width:100%;height:auto}
+.igt{position:sticky;top:120px}
+.igt p{font-size:17px;max-width:34ch}
+
+/* about */
+.ahead{position:relative;height:clamp(180px,26vw,320px);overflow:hidden;background:#111}
+.ahead img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05);opacity:.7}
+.ahead h1{position:absolute;inset:0;display:grid;place-items:center;font:400 clamp(36px,5vw,72px)/1 var(--h);letter-spacing:.02em;color:var(--milk)}
+.about{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr);gap:clamp(28px,6vw,96px);max-width:960px;margin:0 auto}
+.portrait{margin:0 0 28px;max-width:400px;transform:rotate(-1.2deg);box-shadow:0 24px 50px #41111a33}
+.portrait img,.portrait video{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:50% 20%}
+.pwrap{position:relative;max-width:300px;margin-bottom:32px}.pwrap .portrait{margin:0;width:100%}
+.strip{position:absolute;right:2%;top:8%;width:18%;margin:0;transform:rotate(4deg);box-shadow:0 18px 36px #41111a33}.strip img{width:100%;height:auto}.strip.tape::before{width:150%;top:-14px}
+.about h2{font:400 clamp(26px,2.6vw,34px)/1 var(--t);text-transform:uppercase}
+.about .bio p{font-size:15px;max-width:62ch;margin:0 0 1em}
+.about .bio p:first-child{font-size:clamp(16px,1.4vw,18px);line-height:1.55}
+.about .bio .say{font-size:14px;color:var(--mute)}
+.kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:18px;margin-top:32px;padding-top:24px;border-top:1px solid var(--line)}
+.kv b{display:block;font-weight:400;font-size:15px;text-transform:uppercase;letter-spacing:.06em}
+.tbl{margin-bottom:56px}
+.tbl h3{font:400 clamp(26px,2.8vw,36px)/1.1 var(--h);text-transform:none;margin-bottom:16px}
+table{width:100%;border-collapse:collapse;font-size:16px}
+th{text-align:left;font-size:12px;color:var(--mute);font-weight:400;padding:8px 8px 8px 0;border-bottom:1px solid var(--line);text-transform:uppercase;letter-spacing:.08em}
+td{padding:12px 8px 12px 0;border-bottom:1px solid var(--line);vertical-align:top}
+td:first-child{width:110px;color:var(--mute);white-space:nowrap}
+td:last-child{color:var(--mute);width:32%}
+td a{text-decoration:none;border-bottom:1px solid #41111a40}
+td a:hover{border-color:currentColor}
+.ar{font-size:.8em;color:var(--rose)}
+.awg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.aw{border:1px solid var(--line);padding:28px 26px 30px;display:flex;flex-direction:column;gap:6px;min-height:240px}
+.aw b{font:400 clamp(30px,3.2vw,46px)/.95 var(--t);text-transform:uppercase;margin:auto 0 10px}
+.aw h4{font-size:15px;color:inherit;margin:0;text-transform:none;letter-spacing:0}
+.aw p{font-size:14px;color:var(--mute);margin:0}
+.aw .when{font-size:12px;color:var(--mute);text-transform:uppercase;letter-spacing:.1em}
+.aw.hi{background:var(--ox);color:var(--milk);border-color:var(--ox)}
+.aw.hi p,.aw.hi .when{color:#f7f4f0b0}
+.aw.hi b{color:var(--baby)}
+.earlier{margin-top:28px}
+.earlier ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px 24px}
+.earlier li{border-top:1px solid var(--line);padding-top:10px}
+.earlier li b{display:block;font-weight:400}
+.earlier li span{font-size:13px;color:var(--mute)}
+
+/* contact – a postcard on crumpled paper */
+.contact{min-height:100vh;background:var(--ox);color:var(--milk);display:grid;place-items:center;padding:120px max(5vw,16px) 80px}
+.sheet{position:relative;width:min(640px,100%)}
+.card-p{position:relative;background:var(--baby);color:var(--ox);padding:clamp(24px,4vw,44px);transform:rotate(-1.5deg);box-shadow:0 30px 60px #0005;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(18px,3vw,36px)}
+.card-p::after{content:"";position:absolute;top:24px;bottom:24px;left:54.5%;border-left:1px solid #41111a40}
+.card-p h1{font:400 clamp(40px,5.4vw,64px)/.95 var(--h)}
+.card-p p{font-size:15px;margin:14px 0 0;max-width:28ch}
+.stamp{position:absolute;top:18px;right:18px;width:64px;height:76px;border:2px dotted #41111a66;display:grid;place-items:center;font-size:10px;text-transform:uppercase;letter-spacing:.12em;text-align:center;line-height:1.3;color:var(--rose)}
+.clist{list-style:none;padding:84px 0 0;margin:0;font-size:16px}
+.clist li{padding:10px 0;border-bottom:1px solid #41111a40}
+.clist small{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:#41111a99}
+.clist a{text-decoration:none}
+
+footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:28px max(5vw,16px);font-size:12px;color:var(--mute);border-top:1px solid var(--line);text-transform:uppercase;letter-spacing:.12em}
+footer .fr{display:flex;gap:24px;flex-wrap:wrap}footer .fr a{text-decoration:none}footer .fr a:hover{filter:blur(1.5px)}
+.lg{max-width:760px}.lg .ptitle{margin-bottom:36px}.lg h3{font-size:14px;letter-spacing:.12em;margin:36px 0 10px}.lg p{font-size:16px;margin:0 0 1em}.lg mark{background:#a5bdd566;color:inherit;padding:0 3px}
+footer .fl{color:var(--ink);letter-spacing:.2em;text-decoration:none}
+
+/* motion: subtle only */
+.rv{opacity:0;transition:opacity 1s ease var(--d,0s)}
+.rv.vis{opacity:1}
+@media(prefers-reduced-motion:reduce){.view.on{animation:none}.rv{opacity:1;transition:none}.ltrack,.nb{animation:none}}
+
+@media(max-width:900px){.cs-ti,.cs-ti.l,.cs-feed,.voices{grid-template-columns:minmax(0,1fr)}.cs-ti.l .cs-t{order:0}.cs-ports,.cs-quad{grid-template-columns:repeat(2,minmax(0,1fr))}.cs-strip{grid-template-columns:repeat(3,minmax(0,1fr))}.cs-pair figure:nth-child(2){margin-top:0}.intro,.about,.pintro,.forma,.vhero,.mood,.vtexts,.igwrap,.fgrid2{grid-template-columns:minmax(0,1fr)}.vhero{min-height:0}.vh-t{padding-top:40px}.vws{grid-template-columns:repeat(2,minmax(0,1fr))}.awg{grid-template-columns:minmax(0,1fr)}.aw{min-height:0}.igt{position:static}.hphoto{display:none}}
+@media(max-width:640px){
+  header{grid-template-columns:1fr;gap:6px;padding:14px 16px}.logo{justify-self:center}nav{gap:2px 13px;font-size:10.5px;letter-spacing:.07em;flex-wrap:nowrap}header a.nl{padding:6px 0}.view>.band:first-child{padding-top:120px}
+  .sgrid{--c:3!important;gap:6px}.vws{grid-template-columns:minmax(0,1fr)}
+  .irow{grid-template-columns:52px minmax(0,1fr)}.irow i{display:none}
+  .next{grid-template-columns:minmax(0,1fr) 90px}.next img{width:90px}
+  #peek{display:none}
+  .card-p{grid-template-columns:minmax(0,1fr)}.card-p::after{display:none}.clist{padding-top:0}.stamp{display:none}
+  .ahead{height:230px}.ahead h1{padding-top:70px}
+  table{font-size:14px}.stack thead{display:none}.stack tr{display:grid;padding-block:10px;border-bottom:1px solid var(--line)}.stack td{display:flow-root;border:0;padding:3px 0;padding-inline-start:7em;text-align:start;width:auto!important}.stack td::before{content:attr(data-l);float:inline-start;width:6.5em;margin-inline-start:-7em;font-size:12px;color:var(--mute)}
+}
+@media(min-width:1800px){html{zoom:1.2}}
+@media(min-width:2300px){html{zoom:1.45}}
+</style>
+<script>new MutationObserver(()=>{for(const c of document.querySelectorAll('.stack td:not([data-l])')){let i=0,p=c;while(p=p.previousElementSibling)i+=p.colSpan;c.dataset.l=c.closest('table').rows[0].cells[i]?.textContent||''}}).observe(document,{childList:true,subtree:true})</script>
+</head>
+<body>
+<header>
+  <a class="logo nl in" href="#home">Raviva Nsiama</a>
+  <nav aria-label="Main">
+    <a class="nl in" href="#home" data-nav="home">Home</a>
+    <a class="nl in" href="#work" data-nav="work">Art/Film</a>
+    <a class="nl in" href="#visual-works" data-nav="visual-works">Visual Work</a>
+    <a class="nl in" href="#about" data-nav="about">About Me</a>
+    <a class="nl in" href="#contact" data-nav="contact">Contact</a>
+  </nav>
+  <span></span>
+</header>
+<main>
+
+<!-- HOME -->
+<section class="view" id="v-home" data-title="Home">
+  <div class="hhero">
+    <h1 class="hmark"><video class="hvid" src="media/headshot.mp4" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video><img class="emboss" src="img/emboss.webp" alt="Raviva Nsiama" width="1800" height="1410"></h1>
+    <p class="hline">Filmmaker and visual artist · Film, photography and visual communication · Berlin</p>
+    
+  </div>
+  <div class="stillband"><img src="img/home-eyes.jpg" alt="Close-up of eyes with long lashes, sepia toned"></div>
+  <div class="band"><div class="wrap intro">
+    <h2>{{HOME_HEADING}}</h2>
+    <div>
+      {{HOME_TEXT}}
+      <a class="btn" href="#about">About Raviva</a>
+    </div>
+  </div></div>
+  <div class="laurels" aria-label="Burning Lies festival selections"><img src="img/laurel-prevyou.png" alt="PREVYOU Kurzfilmfestival Berlin – Official Selection 2026"><img src="img/laurel-koeln.png" alt="Afrika Film Festival Köln – Official Selection 2026"><img src="img/laurel-interfilm.png" alt="INTERFILM Berlin – Official Selection 2026"><img src="img/laurel-blackharvest.png" alt="Black Harvest Film Festival – Official Selection 2026"><img src="img/laurel-aesthetica.png" alt="Aesthetica Film Festival – Official Selection 2026"><img src="img/laurel-fame.png" alt="FAME Shorts Film Festival – Official Selection 2026"><img src="img/laurel-afaf.png" alt="African Film and Art Festival – Official Selection 2026"><img src="img/laurel-reel.png" alt="Reel to Reality Film Festival – Official Selection 2026"><img src="img/laurel-paris.png" alt="Paris Lift-Off Film Festival – Official Selection 2026"></div>
+</section>
+
+<!-- WORK -->
+<section class="view" id="v-work" data-title="Direction & Films">
+  <div class="band"><div class="wrap">
+    <h1 class="ptitle">Direction &amp; Films</h1>
+    <p class="psub">Moving image · Photography · Art</p>
+  </div></div>
+  <div class="band" style="padding-top:0"><div class="wrap grid">{{FILM_CARDS}}</div></div>
+  <div class="band"><div class="wrap">
+    <div class="sec-h"><h2 class="idxh">Index</h2><span class="meta">Films, photography and design, newest first</span></div>
+    <div class="index">{{INDEX_ROWS}}</div>
+  </div></div>
+</section>
+{{FILM_VIEWS}}
+
+<!-- VISUAL WORKS -->
+<section class="view" id="v-visual-works" data-title="Visual Work">
+  <div class="band"><div class="wrap forma">
+    <h1 class="ptitle">Visual Works</h1>
+    <p class="fh">Identities, campaigns, social media and visual worlds for cultural and community projects.</p>
+  </div></div>
+  <div class="band" style="padding-top:clamp(16px,3vw,40px)"><div class="wrap vws">{{VIS_CARDS}}</div></div>
+</section>
+{{VIS_VIEWS}}
+
+<!-- ABOUT -->
+<section class="view" id="v-about" data-title="About">
+  <div class="ahead"><img src="img/lum-5.jpg" alt="" style="object-position:50% 40%"><h1>About me</h1></div>
+  <div class="band"><div class="wrap about">
+    <div><div class="pwrap"><figure class="portrait tape"><video class="hvid2" src="media/headshot.mp4" autoplay muted loop playsinline preload="auto" aria-label="Photo booth portraits of Raviva Nsiama"></video></figure></div><h2>Raviva Nsiama</h2><p class="meta">Director · Filmmaker · Visual artist · Berlin</p></div>
+    <div class="bio">
+      {{ABOUT_TEXT}}
+      <p class="say">{{ABOUT_NOTE}}</p>
+      <div class="kv">{{ABOUT_FACTS}}</div>
+    </div>
+  </div></div>
+  <div class="band"><div class="wrap">{{TABLES}}</div></div>
+</section>
+
+<!-- CONTACT -->
+<section class="view" id="v-contact" data-title="Contact">
+  <div class="contact">
+    <div class="sheet">
+      <div class="card-p tape">
+        <div><p class="kick">Write me a postcard</p><h1>Contact</h1><p>For collaborations, commissions, screenings and screener requests.</p><a class="btn em" data-u="raviva.contact" data-d="gmail.com" data-keep>Write an e-mail →</a></div>
+        <div><span class="stamp">Berlin</span>
+          <ul class="clist">
+            <li><small>To</small>Raviva Nsiama</li>
+            <li><small>E-mail</small><a class="em" data-u="raviva.contact" data-d="gmail.com">raviva.contact [at] gmail.com</a></li>
+            <li><small>Instagram</small><a href="https://www.instagram.com/raviva.ziama/" target="_blank" rel="noopener">@raviva.ziama ↗</a></li>
+            <li><small>Based in</small>Berlin, Germany</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEGAL -->
+<section class="view legal" id="v-impressum" data-title="Impressum">
+  <div class="band"><div class="wrap lg">
+    <h1 class="ptitle">Impressum</h1>
+    <h3>Angaben gemäß § 5 DDG</h3>
+    <p>Raviva Nsiama<br>Turnerstraße 12<br>20357 Hamburg<br>Deutschland</p>
+    <h3>Kontakt</h3>
+    <p>E-Mail: <a class="em" data-u="raviva.contact" data-d="gmail.com">raviva.contact [at] gmail.com</a></p>
+    <h3>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h3>
+    <p>Raviva Nsiama, Anschrift wie oben</p>
+    <h3>Haftung für Inhalte</h3>
+    <p>Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden. Als Diensteanbieterin bin ich für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.</p>
+    <h3>Haftung für Links</h3>
+    <p>Diese Website enthält Links zu externen Websites Dritter (z. B. Festivals, Presse, Instagram, Vimeo), auf deren Inhalte ich keinen Einfluss habe. Für diese fremden Inhalte ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Zum Zeitpunkt der Verlinkung waren keine Rechtsverstöße erkennbar. Bei Bekanntwerden von Rechtsverletzungen werden derartige Links umgehend entfernt.</p>
+    <h3>Urheberrecht</h3>
+    <p>Die auf dieser Website veröffentlichten Filme, Fotografien, Grafiken und Texte unterliegen dem deutschen Urheberrecht. Jede Verwertung außerhalb der Grenzen des Urheberrechts bedarf der vorherigen schriftlichen Zustimmung der jeweiligen Urheberin bzw. des jeweiligen Urhebers. Credits von Mitwirkenden sind auf den jeweiligen Projektseiten genannt. Porträts der Kollektion Ancestral Line: Maischa Souaga.</p>
+  </div></div>
+</section>
+
+<section class="view legal" id="v-datenschutz" data-title="Datenschutz">
+  <div class="band"><div class="wrap lg">
+    <h1 class="ptitle">Datenschutz</h1>
+    <p class="lead">Kurz gesagt: Diese Website setzt keine Cookies, nutzt keine Analyse- oder Tracking-Dienste und bindet keine Inhalte von Drittanbietern ein. Deshalb gibt es auch kein Cookie-Banner.</p>
+    <h3>1. Verantwortliche</h3>
+    <p>Raviva Nsiama, Turnerstraße 12, 20357 Hamburg, E-Mail: <a class="em" data-u="raviva.contact" data-d="gmail.com">raviva.contact [at] gmail.com</a></p>
+    <h3>2. Hosting und Server-Logfiles</h3>
+    <p>Diese Website wird bei <mark>[Name und Anschrift des Hosting-Anbieters]</mark> gehostet. Beim Aufruf der Website verarbeitet der Hosting-Anbieter automatisch technische Daten, die Ihr Browser übermittelt (sogenannte Server-Logfiles): IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Seite, Browsertyp und -version, Betriebssystem und die zuvor besuchte Seite (Referrer). Diese Daten sind technisch erforderlich, um die Website sicher und stabil auszuliefern. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem sicheren Betrieb). Die Logfiles werden nach kurzer Zeit gelöscht, sofern keine längere Aufbewahrung zur Aufklärung von Missbrauch erforderlich ist. <mark>[Mit dem Hosting-Anbieter ist ein Vertrag zur Auftragsverarbeitung nach Art. 28 DSGVO abzuschließen.]</mark></p>
+    <h3>3. Cookies, Analyse und Tracking</h3>
+    <p>Diese Website verwendet keine Cookies und keine vergleichbaren Technologien zur Speicherung von Informationen auf Ihrem Endgerät. Es findet keine Reichweitenmessung, kein Tracking und keine Profilbildung statt.</p>
+    <h3>4. Schriftarten und Medien</h3>
+    <p>Alle Schriftarten, Bilder und Videos werden direkt von dieser Website geladen. Es werden keine externen Dienste wie Google Fonts, YouTube- oder Vimeo-Einbettungen genutzt, sodass beim Besuch der Seite keine Daten an solche Anbieter übertragen werden.</p>
+    <h3>5. Kontakt per E-Mail</h3>
+    <p>Wenn Sie mir eine E-Mail schreiben, verarbeite ich Ihre Angaben (z. B. Name, E-Mail-Adresse und Inhalt Ihrer Nachricht), um Ihre Anfrage zu beantworten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage auf einen Vertrag oder dessen Anbahnung zielt, ansonsten Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Beantwortung). Die Daten werden gelöscht, sobald sie nicht mehr benötigt werden, soweit keine gesetzlichen Aufbewahrungspflichten bestehen.</p>
+    <h3>6. Links zu anderen Websites</h3>
+    <p>Diese Website enthält Links, z. B. zu Instagram, Vimeo, Festivals und Presseartikeln. Erst wenn Sie einen solchen Link anklicken, verlassen Sie diese Website; für die Datenverarbeitung auf der verlinkten Seite ist dann deren Betreiber verantwortlich.</p>
+    <h3>7. Ihre Rechte</h3>
+    <p>Sie haben das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch gegen eine Verarbeitung auf Grundlage berechtigter Interessen (Art. 21 DSGVO). Eine formlose E-Mail genügt. Außerdem können Sie sich bei einer Datenschutz-Aufsichtsbehörde beschweren (Art. 77 DSGVO), in Berlin bei der Berliner Beauftragten für Datenschutz und Informationsfreiheit.</p>
+    <p class="meta">Stand: November 2026</p>
+  </div></div>
+</section>
+</main>
+<footer><a class="fl" href="#home">Raviva Nsiama</a><span class="fr"><a href="#impressum">Impressum</a><a href="#datenschutz">Datenschutz</a><span>© 2026 Raviva Nsiama · Berlin</span></span></footer>
+<img id="peek" alt="">
+<script>
+{
+  const routes={{ROUTES}}, filmish={{FILMISH}}, visish={{VISISH}};
+  const views=[...document.querySelectorAll('.view')];
+  const show=()=>{
+    let h=location.hash.slice(1);
+    if(!routes.includes(h))h='home';
+    views.forEach(v=>v.classList.toggle('on',v.id==='v-'+h));
+    const cur=document.getElementById('v-'+h);
+    const sec=filmish.includes(h)?'work':(visish.includes(h)?'visual-works':h);
+    document.querySelectorAll('[data-nav]').forEach(a=>a.toggleAttribute('aria-current',a.dataset.nav===sec));
+    document.title=(h==='home'?'':cur.dataset.title+' – ')+'Raviva Nsiama';
+    document.querySelectorAll('video[autoplay]').forEach(v=>{if(cur.contains(v)){v.muted=true;const p=v.play();if(p)p.catch(()=>{})}else v.pause()});
+    window.scrollTo(0,0);
+  };
+  window.addEventListener('hashchange',show);show();
+  const kick=()=>document.querySelectorAll('.view.on video[autoplay]').forEach(v=>{v.muted=true;v.play().catch(()=>{})});
+  ['pointerdown','touchstart','scroll'].forEach(ev=>addEventListener(ev,kick,{once:true,passive:true}));
+  /* e-mail assembled in the browser, not in the HTML source (protection against bots) */
+  document.querySelectorAll('.em').forEach(a=>{const m=a.dataset.u+String.fromCharCode(64)+a.dataset.d;a.href='mailto:'+m;if(!a.hasAttribute('data-keep'))a.textContent=m});
+  const links=[...document.querySelectorAll('header .nl')];
+  const still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const RV='.card,.vw,.sgrid figure,.bts figure,.vmat figure,.pintro,.intro>*,.tbl,.mood>*,.vtexts>div,.next,.kv>div,.bio p';
+  document.querySelectorAll(RV).forEach(el=>{el.classList.add('rv');const sib=[...el.parentElement.children].filter(c=>c.matches(RV));el.style.setProperty('--d',(Math.min(sib.indexOf(el),6)*0.08)+'s')});
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')}),{threshold:.1,rootMargin:'0px 0px -4% 0px'});
+  document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+  if(!still)document.querySelectorAll('.laurels').forEach(l=>{const tr=document.createElement('div');tr.className='ltrack';[...l.children].forEach(c=>tr.appendChild(c));[...tr.children].forEach(c=>{const k=c.cloneNode(true);k.alt='';k.setAttribute('aria-hidden','true');tr.appendChild(k)});l.appendChild(tr);l.classList.add('marq')});
+  links.forEach((a,i)=>setTimeout(()=>a.classList.remove('in'),still?0:250+i*120));
+  if(!still&&matchMedia('(hover:hover)').matches){
+    links.forEach(a=>{
+      a.addEventListener('mousemove',e=>{const r=a.getBoundingClientRect();a.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.3}px,${(e.clientY-r.top-r.height/2)*.4}px)`});
+      a.addEventListener('mouseleave',()=>{a.style.transition='filter .2s ease-in-out,transform .4s ease';a.style.transform=''});
+      a.addEventListener('mouseenter',()=>{a.style.transition='filter .2s ease-in-out,transform .1s linear'});
+    });
+  }
+  const peek=document.getElementById('peek');
+  document.querySelectorAll('.irow').forEach(r=>{
+    r.addEventListener('mouseenter',()=>{peek.src=r.dataset.img;peek.style.opacity=1});
+    r.addEventListener('mouseleave',()=>{peek.style.opacity=0});
+    r.addEventListener('mousemove',e=>{peek.style.left=(e.clientX+24)+'px';peek.style.top=(e.clientY-120)+'px'});
+  });
+}
+</script>
+</body>
+</html>

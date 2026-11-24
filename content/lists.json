@@ -1,0 +1,183 @@
+{
+  "awards": [
+    {
+      "label": "Winner",
+      "title": "Best Makeup & Styling",
+      "details": "FAME Shorts Film Awards · Burning Lies",
+      "when": "Nov 2026",
+      "highlight": true
+    },
+    {
+      "label": "Nomination",
+      "title": "Best Cinematography",
+      "details": "FAME Shorts Film Awards · Burning Lies (camera: Pauline Pyras)",
+      "when": "Nov 2026",
+      "highlight": false
+    },
+    {
+      "label": "Best master’s degree",
+      "title": "Deutsch-Kongolesischer Bildungspreis",
+      "details": "German-Congolese Education Institute · 1st place",
+      "when": "2026",
+      "highlight": false
+    }
+  ],
+  "exhibitions": [
+    {
+      "when": "Nov 2026",
+      "title": "INTERFILM – Burning Lies",
+      "details": "Berlin, Germany",
+      "url": "https://www.interfilm.de/interfilm-festival-2026/filmsuche/?cHash=c18ae555f97b6ffb94f54daa3e80e818&tx_interfilmfestival_filmlist%5BeventItem%5D=3879"
+    },
+    {
+      "when": "Nov 2026",
+      "title": "Black Harvest Film Festival – Burning Lies",
+      "details": "Chicago, USA",
+      "url": "https://web.saic.edu/blackharvestfest/black-and-blur-3/"
+    },
+    {
+      "when": "Nov 2026",
+      "title": "Aesthetica Short Film Festival – Burning Lies",
+      "details": "York, UK",
+      "url": ""
+    },
+    {
+      "when": "Nov 2026",
+      "title": "Französische Filmtage – Burning Lies, with Q&A",
+      "details": "Leipzig, Germany",
+      "url": "https://franzoesische-filmtage.de/upload/pdf/FFT2026_Katalog_eBook.pdf"
+    },
+    {
+      "when": "Oct 2026",
+      "title": "FAME Shorts – Burning Lies",
+      "details": "Cape Town, South Africa",
+      "url": "https://viranova.co.za/fame-week-africa/films/burning-lies"
+    },
+    {
+      "when": "Oct 2026",
+      "title": "Reel to Reality – Burning Lies",
+      "details": "Johannesburg, South Africa",
+      "url": "https://bhlvisuals.com/festival/2026/films?film=burning-lies-mu2qvnlm"
+    },
+    {
+      "when": "Sep 2026",
+      "title": "Afrika Film Festival – Burning Lies",
+      "details": "Cologne, Germany",
+      "url": "https://www.afrikafilmfestivalkoeln.de/programm/aktuell/detail-1?cHash=c93fbd622e145d7e86f6c37875c7f17c&tx_aladinfaadb2_pi10%5Baction%5D=detail&tx_aladinfaadb2_pi10%5Bcontroller%5D=Festival&tx_aladinfaadb2_pi10%5Bwas%5D=11762"
+    },
+    {
+      "when": "Aug 2026",
+      "title": "Paris Lift-Off – Burning Lies",
+      "details": "Online",
+      "url": ""
+    },
+    {
+      "when": "May 2026",
+      "title": "PREVYOU Kurzfilmfestival – Burning Lies",
+      "details": "Berlin, Germany",
+      "url": ""
+    },
+    {
+      "when": "Apr 2026",
+      "title": "(Supposedly Like) Oil and Water – Burning Lies",
+      "details": "Gewölbekeller, Berlin",
+      "url": ""
+    },
+    {
+      "when": "Mar 2026",
+      "title": "PH0N0LOGUES – Burning Lies",
+      "details": "GlogauAIR, Berlin",
+      "url": ""
+    },
+    {
+      "when": "2026",
+      "title": "African Film and Art Festival – Burning Lies",
+      "details": "USA",
+      "url": ""
+    },
+    {
+      "when": "2025",
+      "title": "UdK Rundgang – Lumière Dévoilée",
+      "details": "UdK Berlin",
+      "url": ""
+    },
+    {
+      "when": "2024",
+      "title": "A Day of Hope and Joy – Burning Lies",
+      "details": "Refuge Worldwide, Berlin",
+      "url": ""
+    },
+    {
+      "when": "Feb 2023",
+      "title": "PH0N0L0GUES – Le Coup de Foudre",
+      "details": "Bar 186, Berlin",
+      "url": ""
+    }
+  ],
+  "earlier": [
+    {
+      "title": "Prometheus Erbe × Culterim",
+      "details": "Ablaze in Flames · Berlin"
+    },
+    {
+      "title": "La Mer Blessée × SOMA Art Space",
+      "details": "MAMI WATA, two-channel installation · Berlin"
+    },
+    {
+      "title": "Durban Film Mart",
+      "details": "South Africa"
+    },
+    {
+      "title": "Lift-Off Global Network",
+      "details": "Amsterdam · London · Berlin"
+    },
+    {
+      "title": "Short Nights of Berlin",
+      "details": "Kino Central, Berlin"
+    }
+  ],
+  "press": [
+    {
+      "when": "Nov 2026",
+      "title": "kreuzer Leipzig",
+      "details": "“Es geht nicht nur um Frankreich” · Französische Filmtage",
+      "url": "https://kreuzer-leipzig.de/2026/11/15/leipzig-franzoesische-filmtage-2026"
+    },
+    {
+      "when": "Nov 2026",
+      "title": "Berliner Tageszeitung",
+      "details": "Französische Filmtage: focus on African cinema",
+      "url": "https://www.berlinertageszeitung.de/Kultur/927049-31-franzosische-filmtage-in-leipzig-fokus-auf-afrikanisches-kino-und-postkoloniale-perspektiven.html"
+    },
+    {
+      "when": "Nov 2026",
+      "title": "Radioeins × INTERFILM",
+      "details": "Burning Lies",
+      "url": ""
+    },
+    {
+      "when": "Nov 2026",
+      "title": "INTERFILM Berlin",
+      "details": "Film profile, credits and screenings",
+      "url": "https://www.interfilm.de/interfilm-festival-2026/filmsuche/?cHash=c18ae555f97b6ffb94f54daa3e80e818&tx_interfilmfestival_filmlist%5BeventItem%5D=3879"
+    },
+    {
+      "when": "Sep 2026",
+      "title": "Afrika Film Festival Köln",
+      "details": "Artist & film profile",
+      "url": "https://www.afrikafilmfestivalkoeln.de/programm/aktuell/detail-1?cHash=c93fbd622e145d7e86f6c37875c7f17c&tx_aladinfaadb2_pi10%5Baction%5D=detail&tx_aladinfaadb2_pi10%5Bcontroller%5D=Festival&tx_aladinfaadb2_pi10%5Bwas%5D=11762"
+    },
+    {
+      "when": "2026",
+      "title": "Black Harvest Film Festival",
+      "details": "Programme “Black and Blur”",
+      "url": "https://web.saic.edu/blackharvestfest/black-and-blur-3/"
+    },
+    {
+      "when": "2026",
+      "title": "FAME Shorts",
+      "details": "Official film entry",
+      "url": "https://viranova.co.za/fame-week-africa/films/burning-lies"
+    }
+  ]
+}

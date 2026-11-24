@@ -1,0 +1,51 @@
+{
+  "order": 6,
+  "slug": "elbesolar",
+  "title": "Elbesolar",
+  "year": "2024–25",
+  "sort_year": "2025",
+  "kind": "Visual identity · Logo",
+  "cover": "/img/elb-v2.jpg",
+  "role": "Logo, visual identity, stationery",
+  "lead": "A sun rising over the Elbe. Visual identity and logo for a solar energy company.",
+  "blocks": [
+    {
+      "type": "textimg",
+      "image": "/img/elb-v1.jpg",
+      "title": "Origin",
+      "text": "Elbesolar plans solar energy systems in Hamburg. The company needed a mark that feels as clear and technical as its work, and as warm as the energy it works with.",
+      "side": "r"
+    },
+    {
+      "type": "kit",
+      "image": "/img/elb-kit2.jpg",
+      "caption": "Brand kit · logo construction, palette, typography and applications"
+    },
+    {
+      "type": "images",
+      "layout": "trio",
+      "images": [
+        "/img/elb-v3.jpg",
+        "/img/elb-v4.jpg",
+        "/img/elb-v5.jpg"
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Concept & design decisions",
+      "text": "A clear semicircle with freely drawn rays: constructed yet handmade. The sun rises over the river, and the mark works in colour, in one colour and at the smallest sizes."
+    },
+    {
+      "type": "images",
+      "layout": "pair",
+      "images": [
+        "/img/elb-v6.jpg",
+        "/img/elb-v8.jpg"
+      ]
+    },
+    {
+      "type": "full",
+      "image": "/img/elb-v7.jpg"
+    }
+  ]
+}

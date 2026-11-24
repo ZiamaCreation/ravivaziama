@@ -1,0 +1,65 @@
+{
+  "order": 4,
+  "slug": "ancestral-line",
+  "title": "Ancestral Line",
+  "year": "since 2025",
+  "sort_year": "2026",
+  "kind": "Logo · Product photography · Social media design",
+  "cover": "/img/anc-cover.jpg",
+  "role": "Logo, social media design and direction, templates, product photography",
+  "lead": "Logo, social media design and product photography for a jewellery collection.",
+  "blocks": [
+    {
+      "type": "textimg",
+      "image": "/img/anc-n1.jpg",
+      "title": "Origin",
+      "text": "Ancestral Line is the jewellery collection by Ziama × Rose: nine pieces of circles, lines and gates, each with a name and a meaning. The collection needed a visual language that tells these meanings, not only shows the pieces.",
+      "side": "r"
+    },
+    {
+      "type": "kit",
+      "image": "/img/anc-kit.jpg",
+      "caption": "Brand kit · logo, typography, palette and imagery"
+    },
+    {
+      "type": "images",
+      "layout": "trio",
+      "images": [
+        "/img/anc-n2.jpg",
+        "/img/anc-n3.jpg",
+        "/img/anc-n6.jpg"
+      ]
+    },
+    {
+      "type": "full",
+      "image": "/img/anc-n9.jpg"
+    },
+    {
+      "type": "text",
+      "title": "Concept & design decisions",
+      "text": "Raviva developed the look of the Instagram presence and built templates for posts, stories and launch announcements, so the brand speaks in one visual language. She shot the product photography herself: still lifes of the pieces in sand, earth, fruit and textures. Portraits: Maischa Souaga."
+    },
+    {
+      "type": "images",
+      "layout": "pair",
+      "images": [
+        "/img/anc-n7.jpg",
+        "/img/anc-n8.jpg"
+      ]
+    },
+    {
+      "type": "images",
+      "layout": "pair",
+      "images": [
+        "/img/anc-n5.jpg",
+        "/img/anc-n4.jpg"
+      ]
+    },
+    {
+      "type": "feed",
+      "image": "/img/anc-ig.jpg",
+      "url": "https://www.instagram.com/ziamaxrose/",
+      "handle": "@ziamaxrose"
+    }
+  ]
+}
